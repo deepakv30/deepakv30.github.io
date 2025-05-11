@@ -71,7 +71,7 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
+  <div id="hero" class="hero route bg-image" data-src="assets/img/hero-bg.jpg">
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
@@ -84,6 +84,17 @@
       </div>
     </div>
   </div><!-- End Hero Section -->
+
+  <script>
+    // Lazy loading script for hero background image
+    document.addEventListener("DOMContentLoaded", function () {
+      const heroSection = document.querySelector("#hero");
+      const bgImage = heroSection.getAttribute("data-src");
+      if (bgImage) {
+        heroSection.style.backgroundImage = `url(${bgImage})`;
+      }
+    });
+  </script>
 
   <main id="main">
 
