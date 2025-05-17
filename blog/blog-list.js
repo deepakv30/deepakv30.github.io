@@ -8,7 +8,7 @@ const blogs = [
     author: "Deepak Vishwakarma",
     time: "10 min",
     image: "https://miro.medium.com/max/1100/0*tk0BvANKXfP85bV0",
-    url: "linux-commands-cheat-sheet.html"
+    url: "https://medium.com/@deepakv30/linux-commands-cheat-sheet-913c5a5e36d8"
   },
   {
     title: "Getting started with Shell Scripting",
@@ -17,7 +17,7 @@ const blogs = [
     author: "Deepak Vishwakarma",
     time: "10 min",
     image: "https://miro.medium.com/max/1100/1*I0oi-OIRmQOHCK_1G8ahhQ.webp",
-    url: "getting-started-with-shell-scripting.html"
+    url: "https://medium.com/@deepakv30/getting-started-with-shell-scripting-ef84489b82b4"
   },
   {
     title: "Kick-start your AWS Cloud journey within 10 minutes",
@@ -26,7 +26,7 @@ const blogs = [
     author: "Deepak Vishwakarma",
     time: "10 min",
     image: "https://miro.medium.com/max/1100/1*Hk7uuC6HfPwTd9nMws81Ww.webp",
-    url: "kick-start-aws-cloud-journey.html"
+    url: "https://medium.com/@deepakv30/kick-start-aws-cloud-journey-in-5-minutes-786b0a95d15f"
   }
 ];
 
