@@ -45,6 +45,18 @@
             </div>
           </div>
         </div>
+        <!-- Search Bar -->
+        <div class="row mb-4">
+          <div class="col-md-8 offset-md-2">
+            <div class="input-group">
+              <input type="text" id="blog-search" class="form-control" placeholder="Search blog posts by title, description, or category..." aria-label="Search blogs">
+              <button class="btn btn-outline-secondary" type="button" id="clear-search">
+                <i class="bi bi-x-lg"></i>
+              </button>
+            </div>
+            <small id="search-results-count" class="text-muted mt-2 d-block"></small>
+          </div>
+        </div>
         <div class="row" id="blog-list">
           <!-- Blog cards will be inserted here by JS -->
         </div>
