@@ -30,9 +30,20 @@ const blogs = [
   }
 ];
 
-const blogList = document.getElementById('blog-list');
-if (blogList) {
-  blogs.forEach(blog => {
+// Function to render blog cards
+function renderBlogs(blogsToRender) {
+  const blogList = document.getElementById('blog-list');
+  if (!blogList) return;
+  
+  // Clear existing content
+  blogList.innerHTML = '';
+  
+  if (blogsToRender.length === 0) {
+    blogList.innerHTML = '<div class="col-12 text-center"><p class="text-muted">No blog posts found matching your search.</p></div>';
+    return;
+  }
+  
+  blogsToRender.forEach(blog => {
     const col = document.createElement('div');
     col.className = 'col-md-4';
     col.innerHTML = `
@@ -63,5 +74,59 @@ if (blogList) {
       </div>
     `;
     blogList.appendChild(col);
+  });
+}
+
+// Function to filter blogs based on search query
+function filterBlogs(searchQuery) {
+  const query = searchQuery.toLowerCase().trim();
+  
+  if (!query) {
+    return blogs;
+  }
+  
+  return blogs.filter(blog => {
+    const titleMatch = blog.title.toLowerCase().includes(query);
+    const descriptionMatch = blog.description.toLowerCase().includes(query);
+    const categoryMatch = blog.category.toLowerCase().includes(query);
+    
+    return titleMatch || descriptionMatch || categoryMatch;
+  });
+}
+
+// Function to update search results count
+function updateSearchResultsCount(count, searchQuery) {
+  const resultsCount = document.getElementById('search-results-count');
+  if (resultsCount) {
+    if (searchQuery) {
+      resultsCount.textContent = `Found ${count} result${count !== 1 ? 's' : ''} for "${searchQuery}"`;
+    } else {
+      resultsCount.textContent = '';
+    }
+  }
+}
+
+// Initialize blog list
+renderBlogs(blogs);
+
+// Set up search functionality
+const searchInput = document.getElementById('blog-search');
+const clearSearchBtn = document.getElementById('clear-search');
+
+if (searchInput) {
+  searchInput.addEventListener('input', function(e) {
+    const searchQuery = e.target.value;
+    const filteredBlogs = filterBlogs(searchQuery);
+    renderBlogs(filteredBlogs);
+    updateSearchResultsCount(filteredBlogs.length, searchQuery);
+  });
+}
+
+if (clearSearchBtn) {
+  clearSearchBtn.addEventListener('click', function() {
+    searchInput.value = '';
+    renderBlogs(blogs);
+    updateSearchResultsCount(blogs.length, '');
+    searchInput.focus();
   });
 }
