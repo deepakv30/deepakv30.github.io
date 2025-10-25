@@ -9,9 +9,27 @@
     DESCRIPTION: This file represents the main HTML structure for DeepakV's portfolio website. 
     It includes metadata, links to stylesheets, and the content displayed on the homepage.
   -->
-  <title>DeepakV Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Deepak Vishwakarma - DevSecOps Engineer | Portfolio</title>
+  <meta content="DevSecOps Engineer specializing in GitLab Administration, DevOps Automation, CI/CD, Kubernetes, Docker, AWS, and Linux System Administration. Explore my projects and technical blog." name="description">
+  <meta content="DevSecOps, DevOps Engineer, GitLab, Kubernetes, Docker, AWS, CI/CD, Linux, MLOps, Automation, Infrastructure, Cloud Computing" name="keywords">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://deepakv30.github.io/">
+  <meta property="og:title" content="Deepak Vishwakarma - DevSecOps Engineer">
+  <meta property="og:description" content="DevSecOps Engineer specializing in GitLab Administration, DevOps Automation, and Cloud Infrastructure.">
+  <meta property="og:image" content="https://deepakv30.github.io/assets/img/mypic.jpg">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Deepak Vishwakarma - DevSecOps Engineer">
+  <meta name="twitter:description" content="DevSecOps Engineer specializing in GitLab Administration, DevOps Automation, and Cloud Infrastructure.">
+  <meta name="twitter:image" content="https://deepakv30.github.io/assets/img/mypic.jpg">
+  
+  <!-- Additional SEO Meta Tags -->
+  <meta name="author" content="Deepak Vishwakarma">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://deepakv30.github.io/">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -26,6 +44,108 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Smooth Scroll -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Dark Mode Toggle */
+    .theme-toggle {
+      position: fixed;
+      bottom: 80px;
+      right: 15px;
+      z-index: 996;
+      background: #0078ff;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .theme-toggle:hover {
+      background: #0056b3;
+      transform: scale(1.1);
+    }
+    
+    /* Dark Mode Styles */
+    body.dark-mode {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+    }
+    
+    body.dark-mode h1,
+    body.dark-mode h2,
+    body.dark-mode h3,
+    body.dark-mode h4,
+    body.dark-mode h5,
+    body.dark-mode h6 {
+      color: #ffffff;
+    }
+    
+    body.dark-mode .box-shadow-full {
+      background-color: #2a2a2a;
+      box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.5);
+    }
+    
+    body.dark-mode .card {
+      background-color: #2a2a2a;
+      color: #e0e0e0;
+    }
+    
+    body.dark-mode .service-box {
+      background-color: #2a2a2a;
+    }
+    
+    body.dark-mode #header {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+    
+    body.dark-mode .navbar a {
+      color: #e0e0e0;
+    }
+    
+    body.dark-mode footer {
+      background-color: #0a0a0a;
+    }
+  </style>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Deepak Vishwakarma",
+    "url": "https://deepakv30.github.io/",
+    "image": "https://deepakv30.github.io/assets/img/mypic.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/deepakv30/",
+      "https://github.com/deepakv30",
+      "https://medium.com/@deepakv30"
+    ],
+    "jobTitle": "DevSecOps Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Tech Industry"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bengaluru",
+      "addressRegion": "Karnataka",
+      "addressCountry": "IN"
+    },
+    "email": "deepakv.knit@gmail.com",
+    "description": "DevSecOps Engineer specializing in GitLab Administration, DevOps Automation, CI/CD, Kubernetes, Docker, AWS, and Linux System Administration",
+    "knowsAbout": ["DevOps", "DevSecOps", "GitLab", "Kubernetes", "Docker", "AWS", "CI/CD", "Linux", "MLOps", "Automation", "Infrastructure as Code"]
+  }
+  </script>
+
 </head>
 
 <body>
@@ -35,14 +155,15 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <h1 class="logo"><a href="index.html">Welcome To DevOps World</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      <!-- Uncomment below if you prefer to use an image logo
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="DeepakV Logo" class="img-fluid"></a>
+      -->
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#services">Services</a></li> -->
+          <li><a class="nav-link scrollto" href="#skills">Skills</a></li>
           <li><a class="nav-link scrollto " href="#projects">Projects</a></li>
           <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
@@ -78,7 +199,7 @@
         <div class="container">
           <!--<p class="display-6 color-d">Hello, world!</p>-->
           <h1 class="hero-title mb-4">I am Deepak Vishwakarma</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="DevOps Engineer, Problem Solver, Freelancer"></span></p>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="DevSecOps Engineer, Problem Solver, AIOps Enthusiast"></span></p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
       </div>
@@ -122,8 +243,21 @@
                       Let’s connect and explore impactful solutions together! I’m eager to collaborate with forward-thinking professionals. Let's connect and explore possibilities!
                     </p>
                     <p class="lead">
-                      You can reach me at deepakv.knit@gmail.com.
+                      You can reach me at <a href="mailto:deepakv.knit@gmail.com" class="text-primary">deepakv.knit@gmail.com</a>
                     </p>
+                    <div class="mt-4">
+                      <a href="https://www.linkedin.com/in/deepakv30/" target="_blank" rel="noopener" class="btn btn-primary btn-lg me-2">
+                        <i class="bi bi-linkedin"></i> View LinkedIn Profile
+                      </a>
+                      <a href="https://github.com/deepakv30" target="_blank" rel="noopener" class="btn btn-outline-primary btn-lg">
+                        <i class="bi bi-github"></i> View GitHub
+                      </a>
+                      <!-- Uncomment when you have a resume PDF ready
+                      <a href="assets/resume/deepak-vishwakarma-resume.pdf" download class="btn btn-success btn-lg">
+                        <i class="bi bi-download"></i> Download Resume
+                      </a>
+                      -->
+                    </div>
                   </div>
                 </div>
               </div>
@@ -132,6 +266,190 @@
         </div>
       </div>
     </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="services-mf pt-5 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Skills & Technologies
+              </h3>
+              <p class="subtitle-a">
+                My technical expertise and tools I work with
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-hdd-rack"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">DevOps & CI/CD</h2>
+                <p class="s-description text-center">
+                  GitLab CI/CD, Jenkins, GitHub Actions, ArgoCD, Ansible, Terraform, Helm, Maven, Gradle
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-cloud"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Cloud & Container</h2>
+                <p class="s-description text-center">
+                  AWS (EC2, S3, ECS, Lambda), Docker, Kubernetes, Container Orchestration, Microservices
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-shield-check"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Security & Monitoring</h2>
+                <p class="s-description text-center">
+                  DevSecOps, SonarQube, Trivy, OWASP, Prometheus, Grafana, ELK Stack, APM Tools
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-terminal"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">System Administration</h2>
+                <p class="s-description text-center">
+                  Linux (RHEL, Ubuntu, CentOS), Shell Scripting, Python, System Automation, Performance Tuning
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-git"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Version Control</h2>
+                <p class="s-description text-center">
+                  Git, GitLab Administration, GitHub, Branch Strategies, Code Review Workflows
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-robot"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Emerging Tech</h2>
+                <p class="s-description text-center">
+                  MLOps, AIOps, Infrastructure as Code, GitOps, Observability, SRE Practices
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Experience & Achievements Section ======= -->
+    <section id="experience" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Experience & Achievements
+              </h3>
+              <p class="subtitle-a">
+                Professional journey and recognition
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="box-shadow-full mb-4">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        <i class="bi bi-briefcase"></i> Professional Experience
+                      </h5>
+                    </div>
+                    <div class="timeline-item mb-4">
+                      <h6 class="fw-bold">DevSecOps Engineer</h6>
+                      <p class="text-muted mb-2"><i class="bi bi-building"></i> Top Industry Leaders</p>
+                      <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle text-primary"></i> GitLab Administration & CI/CD Pipeline Optimization</li>
+                        <li><i class="bi bi-check-circle text-primary"></i> Infrastructure Automation & Management</li>
+                        <li><i class="bi bi-check-circle text-primary"></i> DevOps Best Practices Implementation</li>
+                        <li><i class="bi bi-check-circle text-primary"></i> Cloud Infrastructure Design (AWS)</li>
+                      </ul>
+                    </div>
+                    <div class="timeline-item">
+                      <h6 class="fw-bold">Linux System Administrator</h6>
+                      <p class="text-muted mb-2"><i class="bi bi-building"></i> Previous Roles</p>
+                      <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle text-primary"></i> System Performance Tuning & Optimization</li>
+                        <li><i class="bi bi-check-circle text-primary"></i> Shell Scripting & Automation</li>
+                        <li><i class="bi bi-check-circle text-primary"></i> Security Hardening & Compliance</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="box-shadow-full mb-4">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        <i class="bi bi-trophy"></i> Key Achievements
+                      </h5>
+                    </div>
+                    <div class="achievement-item mb-3">
+                      <p><i class="bi bi-star-fill text-warning"></i> <strong>Industry Recognition:</strong> Won awards for outstanding contributions in DevOps automation and infrastructure optimization</p>
+                    </div>
+                    <div class="achievement-item mb-3">
+                      <p><i class="bi bi-graph-up text-success"></i> <strong>Performance Improvement:</strong> Optimized CI/CD pipelines reducing deployment time significantly</p>
+                    </div>
+                    <div class="achievement-item mb-3">
+                      <p><i class="bi bi-shield-check text-primary"></i> <strong>Security Excellence:</strong> Implemented DevSecOps practices enhancing system security posture</p>
+                    </div>
+                    <div class="achievement-item mb-3">
+                      <p><i class="bi bi-people text-info"></i> <strong>Knowledge Sharing:</strong> Active technical blogger on Medium with multiple published articles on DevOps topics</p>
+                    </div>
+                    <div class="achievement-item">
+                      <p><i class="bi bi-lightbulb text-warning"></i> <strong>Innovation:</strong> Developed proof-of-concepts and architected resilient systems for complex challenges</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Experience Section -->
 
     <!-- ======= Projects Section ======= -->
     <section id="projects" class="projects-mf sect-pt4 route">
@@ -153,7 +471,7 @@
           <div class="col-md-4">
             <div class="card card-project">
               <div class="card-img">
-                <a href="JS%20Calculator/index.html" target="_blank"><img src="assets/img/calculator.png" alt="JS Calculator" class="img-fluid"></a>
+                <a href="JS%20Calculator/index.html" target="_blank"><img src="assets/img/calculator.png" alt="JavaScript Calculator Project Screenshot" class="img-fluid" loading="lazy"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -169,7 +487,7 @@
               <div class="card-footer">
                 <div class="post-author">
                   <a href="#">
-                    <img src="assets/img/mypic.jpg" alt="" class="avatar rounded-circle">
+                    <img src="assets/img/mypic.jpg" alt="Deepak Vishwakarma Profile Picture" class="avatar rounded-circle" loading="lazy">
                     <span class="author">Deepak Vishwakarma</span>
                   </a>
                 </div>
@@ -182,7 +500,7 @@
           <div class="col-md-4">
             <div class="card card-project">
               <div class="card-img">
-                <a href="Todo-Application/index.html" target="_blank"><img src="assets/img/Todo-Application.png" alt="Todo Application" class="img-fluid"></a>
+                <a href="Todo-Application/index.html" target="_blank"><img src="assets/img/Todo-Application.png" alt="Todo Application Project Screenshot" class="img-fluid" loading="lazy"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -198,7 +516,7 @@
               <div class="card-footer">
                 <div class="post-author">
                   <a href="#">
-                    <img src="assets/img/mypic.jpg" alt="" class="avatar rounded-circle">
+                    <img src="assets/img/mypic.jpg" alt="Deepak Vishwakarma Profile Picture" class="avatar rounded-circle" loading="lazy">
                     <span class="author">Deepak Vishwakarma</span>
                   </a>
                 </div>
@@ -232,7 +550,7 @@
           <div class="col-md-4">
             <div class="card card-blog">
               <div class="card-img">
-                <a href="https://medium.com/@deepakv30/linux-commands-cheat-sheet-913c5a5e36d8" target="_blank"><img src="https://miro.medium.com/max/1100/0*tk0BvANKXfP85bV0" alt="" class="img-fluid"></a>
+                <a href="https://medium.com/@deepakv30/linux-commands-cheat-sheet-913c5a5e36d8" target="_blank" rel="noopener"><img src="https://miro.medium.com/max/1100/0*tk0BvANKXfP85bV0" alt="Linux Commands Cheat Sheet Cover Image" class="img-fluid" loading="lazy"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -248,7 +566,7 @@
               <div class="card-footer">
                 <div class="post-author">
                   <a href="#">
-                    <img src="assets/img/mypic.jpg" alt="" class="avatar rounded-circle">
+                    <img src="assets/img/mypic.jpg" alt="Deepak Vishwakarma Profile Picture" class="avatar rounded-circle" loading="lazy">
                     <span class="author">Deepak Vishwakarma</span>
                   </a>
                 </div>
@@ -261,7 +579,7 @@
           <div class="col-md-4">
             <div class="card card-blog">
               <div class="card-img">
-                <a href="https://medium.com/@deepakv30/getting-started-with-shell-scripting-ef84489b82b4" target="_blank"><img src="https://miro.medium.com/max/1100/1*I0oi-OIRmQOHCK_1G8ahhQ.webp" alt="" class="img-fluid"></a>
+                <a href="https://medium.com/@deepakv30/getting-started-with-shell-scripting-ef84489b82b4" target="_blank" rel="noopener"><img src="https://miro.medium.com/max/1100/1*I0oi-OIRmQOHCK_1G8ahhQ.webp" alt="Shell Scripting Tutorial Cover Image" class="img-fluid" loading="lazy"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -277,8 +595,8 @@
               <div class="card-footer">
                 <div class="post-author">
                   <a href="#">
-                    <img src="assets/img/mypic.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Deepak Vishwakmar</span>
+                    <img src="assets/img/mypic.jpg" alt="Deepak Vishwakarma Profile Picture" class="avatar rounded-circle" loading="lazy">
+                    <span class="author">Deepak Vishwakarma</span>
                   </a>
                 </div>
                 <div class="post-date">
@@ -290,7 +608,7 @@
           <div class="col-md-4">
             <div class="card card-blog">
               <div class="card-img">
-                <a href="https://medium.com/@deepakv30/kick-start-aws-cloud-journey-in-5-minutes-786b0a95d15f" target="_blank"><img src="https://miro.medium.com/max/1100/1*Hk7uuC6HfPwTd9nMws81Ww.webp" alt="" class="img-fluid"></a>
+                <a href="https://medium.com/@deepakv30/kick-start-aws-cloud-journey-in-5-minutes-786b0a95d15f" target="_blank" rel="noopener"><img src="https://miro.medium.com/max/1100/1*Hk7uuC6HfPwTd9nMws81Ww.webp" alt="AWS Cloud Journey Guide Cover Image" class="img-fluid" loading="lazy"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -307,8 +625,8 @@
               <div class="card-footer">
                 <div class="post-author">
                   <a href="#">
-                    <img src="assets/img/mypic.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Deepak Vishwakmar</span>
+                    <img src="assets/img/mypic.jpg" alt="Deepak Vishwakarma Profile Picture" class="avatar rounded-circle" loading="lazy">
+                    <span class="author">Deepak Vishwakarma</span>
                   </a>
                 </div>
                 <div class="post-date">
@@ -392,10 +710,9 @@
                     </div>
                     <div class="socials">
                       <ul>
-                        <li><a href="https://medium.com/@deepakv30"><span class="ico-circle"><i class="bi bi-medium"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
-                        <li><a href=""><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
-                        <li><a href="https://www.linkedin.com/in/deepakv30/"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                        <li><a href="https://github.com/deepakv30" target="_blank" rel="noopener" aria-label="GitHub Profile"><span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
+                        <li><a href="https://medium.com/@deepakv30" target="_blank" rel="noopener" aria-label="Medium Blog"><span class="ico-circle"><i class="bi bi-medium"></i></span></a></li>
+                        <li><a href="https://www.linkedin.com/in/deepakv30/" target="_blank" rel="noopener" aria-label="LinkedIn Profile"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
                       </ul>
                     </div>
                   </div>
@@ -433,6 +750,11 @@
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+  <!-- Dark Mode Toggle -->
+  <div class="theme-toggle" id="theme-toggle" title="Toggle Dark Mode">
+    <i class="bi bi-moon-fill" id="theme-icon"></i>
+  </div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -444,6 +766,47 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    // Check for saved theme preference or default to light mode
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    
+    // Apply saved theme on page load
+    if (currentTheme === 'dark') {
+      document.body.classList.add('dark-mode');
+      themeIcon.classList.remove('bi-moon-fill');
+      themeIcon.classList.add('bi-sun-fill');
+    }
+    
+    // Toggle theme
+    themeToggle.addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+      
+      if (document.body.classList.contains('dark-mode')) {
+        themeIcon.classList.remove('bi-moon-fill');
+        themeIcon.classList.add('bi-sun-fill');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        themeIcon.classList.remove('bi-sun-fill');
+        themeIcon.classList.add('bi-moon-fill');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
+
+  <!-- Google Analytics (Replace YOUR_GA_ID with your actual Google Analytics ID) -->
+  <!-- Uncomment and add your GA ID when ready
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'YOUR_GA_ID');
+  </script>
+  -->
 
 </body>
 

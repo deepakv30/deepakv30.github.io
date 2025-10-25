@@ -1,0 +1,14 @@
+# robots.txt for https://deepakv30.github.io/
+
+User-agent: *
+Allow: /
+
+# Sitemap location (create and upload a sitemap.xml file)
+Sitemap: https://deepakv30.github.io/sitemap.xml
+
+# Crawl delay (optional, adjust if needed)
+# Crawl-delay: 10
+
+# Block specific paths if needed (example)
+# Disallow: /private/
+# Disallow: /temp/
