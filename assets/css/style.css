@@ -1577,11 +1577,17 @@ footer .credits a {
 .projects-mf .card-project:hover {
   transform: translateY(-10px);
 }
+.projects-mf .card-img {
+  overflow: hidden;
+  height: 200px;
+}
+
 .projects-mf .card-img img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 .projects-mf .card-body {
   padding: 20px;
