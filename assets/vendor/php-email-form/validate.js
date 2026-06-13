@@ -65,8 +65,8 @@
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      // Support original 'OK' (php template) or any 2xx response (e.g. Formspree returns thank you text)
-      const isSuccess = (data && data.trim() == 'OK') || true; // response.ok already passed
+      // Support original 'OK' (php template) or any 2xx response (e.g. FormSubmit / Formspree)
+      const isSuccess = true; // already passed response.ok check
       if (isSuccess) {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
@@ -81,7 +81,21 @@
 
   function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = error;
+    
+    let msg = error;
+    if (error instanceof Error) {
+      msg = error.message || error.toString();
+    }
+    
+    // Make Formspree / service errors user-friendly instead of raw JSON
+    const lower = (msg || '').toLowerCase();
+    if (lower.includes('form not found') || lower.includes('form_not_found')) {
+      msg = 'Contact service is not configured yet. Please email me directly at deepakv.knit@gmail.com';
+    } else if (lower.includes('{"error"') || lower.includes('form not found')) {
+      msg = 'Submission service error. Please try again later or contact me directly.';
+    }
+    
+    thisForm.querySelector('.error-message').innerHTML = msg;
     thisForm.querySelector('.error-message').classList.add('d-block');
   }
 
