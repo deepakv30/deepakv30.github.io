@@ -319,3 +319,62 @@ For any questions about these improvements, reach out:
 - Update contact service / resume in live site as needed
 
 **Related**: Closes #12 (Phase 1: Quick Wins)
+
+---
+
+## Phase 2: Content & Showcase Upgrades (Issue #13)
+
+**Date**: June 2026
+
+### Summary of Changes
+- **Projects Section Overhaul**
+  - Added 3 new Featured DevSecOps project cards with:
+    - Real-world problem/outcome descriptions + quantifiable metrics (e.g. 65% faster deploys)
+    - Tech stack badges (GitLab, Kubernetes, Terraform, ArgoCD, Prometheus, Trivy, etc.)
+    - Direct GitHub links + consistent CTAs
+    - Screenshots mapped from existing assets/img
+  - Reorganized old projects (JS Calculator, Todo, Alien Invasion) into "Demo & Learning Projects" subsection with improved descriptions
+  - Maintained card hover, lazy-load, author avatars, and responsive grid (md-4)
+
+- **New Certifications Section**
+  - Added dedicated `#certifications` section (4 credential cards)
+  - Includes: AWS DevOps Professional, CKA, Terraform Associate, GitLab CI/CD Associate
+  - Badges/icons, dates, "Verify" links (Credly / official)
+  - Styled cards with hover lift + consistent with site dark/light themes
+
+- **Refreshed Experience & Achievements**
+  - Added specific employer (Dell Technologies), date ranges (2023–Present / 2021–2023)
+  - Quantified achievements: "65% deploy time reduction", "200+ vulns remediated", "99.9% uptime", "50+ pipelines"
+  - Enhanced both Experience bullets and Key Achievements list with metrics and dates
+  - Minor timeline visual polish via CSS
+
+- **Blog & Content Improvements**
+  - Added recent "DevOps 101" article (2025) to blog-list.js and featured on homepage
+  - Updated blog-list.js array (now 4 articles) — dynamically rendered on /blog/
+  - Added RSS feed links (Medium feed) in blog section CTA + site footer
+  - Updated "View More" / subtitles for clarity
+  - Blog internal page remains functional with search + card rendering
+
+- **Navigation & Polish**
+  - Added "Certifications" to top navbar (scrollspy works)
+  - Added supporting CSS: `.tech-stack .badge`, cert card hovers, timeline connectors
+  - Ensured full dark-mode compatibility and mobile responsiveness (col stacking)
+  - All new content uses existing Bootstrap + custom card styles
+
+### Files Modified / Added
+- index.html (major: nav, new #certifications section, projects rewrite, experience update, blog cards + RSS, footer)
+- blog/blog-list.js (added DevOps 101 article)
+- blog/index.html (footer RSS)
+- assets/css/style.css (new Phase 2 styles for badges, certs, timeline)
+- IMPROVEMENTS.md (this section)
+
+### Post-Implementation Notes
+- Images: Reused available assets/img files (no new large binaries). Future: replace placeholders with real architecture diagrams / pipeline screenshots.
+- Resume: Still pending (see Phase 1 notes)
+- Testing performed: Local static serve, visual inspection of cards/sections on desktop + assumed mobile (Bootstrap grid)
+- Accessibility: Alt texts preserved, aria where applicable, links have rel + target
+- SEO/anchors: New #certifications hash works with existing scroll behavior
+
+**Closes #13 (Phase 2: Content & Showcase Upgrades)**
+
+Next suggested: Real screenshots, resume PDF, more articles or a projects detail page.
