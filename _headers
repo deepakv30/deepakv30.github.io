@@ -1,0 +1,15 @@
+# GitHub Pages / Netlify-style headers for security (Phase 3)
+# Note: GitHub Pages has limited native support for custom response headers (some features via this file in publish dir).
+# For full control consider Cloudflare or similar in front. These provide defense-in-depth.
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
+  # CSP is intentionally permissive to allow:
+  # - inline styles/scripts for dark mode toggle + smooth scroll
+  # - Plausible analytics
+  # - FormSubmit.co for contact (no account)
+  # - External Medium images in blog + bootstrap CDN fallbacks if any
+  Content-Security-Policy: default-src 'self' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://plausible.io https://formsubmit.co; style-src 'self' 'unsafe-inline' https:; img-src 'self' https: data:; font-src 'self' https:; connect-src 'self' https://plausible.io https://formsubmit.co; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co;

@@ -169,48 +169,6 @@
   }
 
   /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-  });
-
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
-
-  /**
    * Preloader
    */
   let preloader = select('#preloader');
@@ -220,9 +178,9 @@
     });
   }
 
-  /**
-   * Initiate Pure Counter 
-   */
-  new PureCounter();
+  // Note (Phase 3): Removed unused GLightbox, Swiper (2x), PureCounter initializers + vendor loads.
+  // These were remnants from the original template and no longer had matching DOM elements
+  // (no .portfolio-lightbox, no .testimonials-slider, no .portfolio-details-slider, no counters).
+  // This significantly reduces initial payload and unused JS execution.
 
 })()
