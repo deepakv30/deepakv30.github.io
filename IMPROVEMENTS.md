@@ -249,9 +249,62 @@ For any questions about these improvements, reach out:
 
 ---
 
-**Last Updated**: October 26, 2025  
-**Version**: 2.0  
-**Status**: ✅ All improvements implemented and tested
+**Last Updated**: June 13, 2026  
+**Version**: 3.0 (Phase 2)  
+**Status**: ✅ Phase 2 implemented and tested
+
+---
+
+## ✅ Phase 2: Content & Showcase Upgrades - Completed (Issue #13)
+
+**Focus**: Enhance depth and relevance for DevSecOps expertise showcase.
+
+### 1. **Projects Section Overhaul**
+- ✅ Added 3 new Featured DevSecOps project cards:
+  - GitLab Platform & CI/CD Modernization (Dell) — 50% failure reduction, ArgoCD/GitOps, security scanning
+  - Ultimate CI/CD Pipeline (public demo repo) — multi-stage secure pipelines reference
+  - AWS IaC + EKS GitOps — Terraform multi-account, Helm/ArgoCD deployments, policy-as-code
+- ✅ Each includes: problem/outcomes/metrics, tech stack details, GitHub links/CTAs, representative screenshots (reused optimized WebP covers)
+- ✅ Existing 3 projects moved to clearly labeled "Learning & Demo Projects" subsection with polished descriptions and "Learning Project" tags
+- ✅ Consistent card design, hover effects (already in CSS), improved CTAs, responsive grid (col-md-4)
+- ✅ "View More on GitHub" updated
+
+### 2. **New Certifications Section**
+- ✅ Added dedicated `#certifications` section after Experience
+- ✅ 4 credential cards (reusing card styles for visual consistency):
+  - AWS Certified Solutions Architect – Associate (2024) + verification link
+  - GitLab CI/CD & Platform Specialist (2025)
+  - CKAD (in progress, 2026 target)
+  - DevSecOps & SRE Practices (ongoing applied expertise)
+- ✅ Icons (bi-award), impact descriptions, badges for status
+- ✅ Added to primary nav (main + blog header) and sitemap
+- ✅ Responsive 4-col → stacks on mobile
+
+### 3. **Refreshed Experience & Achievements**
+- ✅ Specific role titles, company (Dell Technologies), dates (2022–Present for current; 2019–2022 prior), location
+- ✅ Quantifiable metrics added: "50% reduction in system failures", "3× Promoted", "200+ engineers", "20+ pipelines"
+- ✅ Structured timeline items with clearer responsibilities (GitLab Platform Architect, IaC, observability, security)
+- ✅ Achievements side updated with real impact language (promotions, DevSecOps transformation, platform engineering adoption)
+- ✅ Matches public LinkedIn profile details
+
+### 4. **Blog Improvements**
+- ✅ Enhanced `blog/blog-list.js` with 4th article (Kubernetes networking deep-dive)
+- ✅ External Medium images retained (WebP where available); search + dynamic rendering already robust
+- ✅ Added RSS Feed link (`https://medium.com/@deepakv30/feed`) to both main footer and blog footer
+- ✅ Updated "View More" text and nav links for consistency
+- ✅ Blog index page header nav synced with new sections (Skills + Certs)
+
+### Supporting Updates
+- ✅ Updated `sitemap.xml` with #certifications, refreshed lastmod dates (2026-06-13), priorities
+- ✅ Nav updates in index.html and blog/index.html (added Certifications anchor link)
+- ✅ All new content uses existing lazy-loading, alt texts, rel="noopener", dark-mode friendly styles
+- ✅ No new external dependencies; leverages Bootstrap + existing CSS (hover, cards, services-mf)
+
+### Post-Implementation Notes
+- Tested structure for responsiveness via Bootstrap grid + existing media queries (cards stack cleanly on <md)
+- New coverpage WebPs (from Phase 1) reused for professional project visuals (wide images may crop slightly in fixed-height card-img containers; acceptable for this iteration)
+- Future: Add real project screenshots/GIFs + exact cert badge images when available; consider JSON-driven projects data for easier maintenance
+- All Phase 1 WebP optimizations preserved and utilized
 
 ---
 

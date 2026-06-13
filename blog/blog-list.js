@@ -27,6 +27,15 @@ const blogs = [
     time: "10 min",
     image: "https://miro.medium.com/max/1100/1*Hk7uuC6HfPwTd9nMws81Ww.webp",
     url: "https://medium.com/@deepakv30/kick-start-aws-cloud-journey-in-5-minutes-786b0a95d15f"
+  },
+  {
+    title: "Kubernetes the Hard Way – Networking Lessons",
+    description: "Deep dive into Kubernetes networking fundamentals (CNI, Weave, kube-proxy, Services, Ingress). Practical insights from setting up clusters from scratch and troubleshooting real connectivity issues.",
+    category: "Kubernetes",
+    author: "Deepak Vishwakarma",
+    time: "12 min",
+    image: "https://miro.medium.com/max/1100/1*I0oi-OIRmQOHCK_1G8ahhQ.webp",
+    url: "https://www.linkedin.com/in/deepakv30/"
   }
 ];
 
