@@ -1612,3 +1612,46 @@ footer .credits a {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
+/* Phase 2: Tech stack badges & Certifications polish */
+.tech-stack .badge {
+  font-size: 0.65rem;
+  padding: 0.2em 0.45em;
+  font-weight: 500;
+  border-radius: 0.25rem;
+}
+
+#certifications .box-shadow-full {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+#certifications .box-shadow-full:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+#certifications .btn {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+}
+
+/* Timeline items polish (Phase 2) */
+.timeline-item {
+  position: relative;
+  padding-left: 1.25rem;
+}
+.timeline-item:before {
+  content: "";
+  position: absolute;
+  left: 0.35rem;
+  top: 0.35rem;
+  bottom: -0.5rem;
+  width: 2px;
+  background: #cde1f8;
+}
+.timeline-item:last-child:before {
+  display: none;
+}
+.timeline-item h6 {
+  margin-bottom: 0.15rem;
+}

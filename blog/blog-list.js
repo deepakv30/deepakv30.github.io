@@ -27,6 +27,15 @@ const blogs = [
     time: "10 min",
     image: "https://miro.medium.com/max/1100/1*Hk7uuC6HfPwTd9nMws81Ww.webp",
     url: "https://medium.com/@deepakv30/kick-start-aws-cloud-journey-in-5-minutes-786b0a95d15f"
+  },
+  {
+    title: "DevOps 101: A Beginner’s Guide to Seamless Development & Operations",
+    description: "DevOps is more than just a set of tools — it’s a transformative culture that bridges development and operations, helping teams collaborate and deliver value faster.",
+    category: "DevOps",
+    author: "Deepak Vishwakarma",
+    time: "12 min",
+    image: "https://miro.medium.com/v2/resize:fill:320:214/1*N2kYzgnT1CWd1_R4BtL4uQ.png",
+    url: "https://medium.com/@deepakv30/devops-101-a-beginners-guide-to-seamless-development-operations-ab299b0b02da"
   }
 ];
 
