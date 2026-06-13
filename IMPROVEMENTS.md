@@ -114,21 +114,12 @@ This document outlines all the improvements made to the portfolio website on Oct
 
 ## 🚀 Next Steps & Recommendations
 
-### **Immediate Actions**
-1. **Add Google Analytics**
-   - Uncomment the GA script in HTML
-   - Replace `YOUR_GA_ID` with actual Google Analytics ID
-   - Track visitor behavior and page performance
-
-2. **Upload Resume**
-   - Create `assets/resume/` directory
-   - Add PDF resume: `deepak-vishwakarma-resume.pdf`
-   - Uncomment the download button in About section
-
-3. **Optimize Images**
-   - Convert images to WebP format for better performance
-   - Use proper compression (TinyPNG, ImageOptim)
-   - Ensure all images are < 200KB
+### **Immediate Actions (Phase 1 - Completed Jun 2026)**
+1. ✅ **Enable Functional Contact Form** (using Formspree + client validation + honeypot spam protection)
+2. ✅ **Add Downloadable Resume** (button enabled; directory + .gitkeep prepared - add real PDF)
+3. ✅ **Integrate Analytics** (switched to privacy-friendly Plausible)
+4. ✅ **Optimize Images** (all hero/profile/project to WebP, compressed <180-200KB, lazy maintained)
+5. ✅ **Fix Minor Links and Paths** (cleaned JS%20Calculator -> js-calculator dir+refs; added rel="noopener..." to all external + _blank links)
 
 ### **Future Enhancements**
 1. **Add Contact Form Integration**
@@ -261,3 +252,66 @@ For any questions about these improvements, reach out:
 **Last Updated**: October 26, 2025  
 **Version**: 2.0  
 **Status**: ✅ All improvements implemented and tested
+
+---
+
+## ✅ Phase 1 Quick Wins - Completed (Issue #12)
+
+**Date**: 2026-06-13  
+**Branch**: phase1-quick-wins  
+**Priority**: High impact usability & performance
+
+### Changes Implemented:
+
+1. **Functional Contact Form**
+   - Uncommented the Send Message form column in contact section
+   - Integrated Formspree (action placeholder: replace YOUR_FORMSPREE_ID after free signup at formspree.io)
+   - Preserved existing loading/sent/error message UI
+   - Added `_gotcha` honeypot spam protection
+   - Patched php-email-form/validate.js to support 2xx success responses (works for Formspree + legacy)
+   - Fixed duplicate #contact id
+
+2. **Downloadable Resume**
+   - Created `assets/resume/` directory + `.gitkeep`
+   - Uncommented + styled the Download Resume button in About section (links to deepak-vishwakarma-resume.pdf)
+   - **Action for maintainer**: Upload the optimized PDF to complete this
+
+3. **Privacy-Friendly Analytics**
+   - Replaced commented Google Analytics block with Plausible.io script (defer, data-domain set)
+   - Zero cookies, lightweight, GDPR-friendly. Visit plausible.io to view stats for domain
+
+4. **Image Optimization (WebP + Compression)**
+   - Converted 11 images (hero, overlays, profile, project thumbnails) from JPG/PNG to WebP
+   - Resized oversized (covers/hero from 4k+ to ~1200-1600px)
+   - Compressed all to ~17-175KB (target <200KB)
+   - Removed old heavy assets from tree (git history retains)
+   - Updated all HTML references (og:image, twitter, inline styles, data-src, img src, avatars)
+   - Also updated blog-list.js reference
+   - Favicons/apple-touch left as PNG (standard)
+   - Expected: improved Lighthouse Performance
+
+5. **Minor Links & Paths**
+   - Renamed `JS Calculator/` -> `js-calculator/` (clean URL, no %20)
+   - Updated all hrefs in index.html + sitemap.xml
+   - Added `rel="noopener noreferrer"` (or noopener) to ALL target="_blank" links (external + internal demos)
+   - Minor: cleaned "Send Message Us" -> "Send Message"
+
+### Files Modified:
+- index.html (major)
+- assets/vendor/php-email-form/validate.js
+- blog/blog-list.js
+- sitemap.xml
+- assets/img/* (new webps, deleted old)
+- assets/resume/.gitkeep (new)
+- IMPROVEMENTS.md (this file)
+- (also: js-calculator/ dir rename)
+
+### Post-Deploy / Testing Notes:
+- Replace Formspree ID and test form end-to-end (desktop + mobile)
+- Add real resume PDF and test download
+- Verify Plausible tracking after deploy (github pages)
+- Re-run Lighthouse (target perf >90)
+- Test on Chrome/Firefox/Safari/Edge + mobile viewports
+- Update formspree endpoint + resume in live site
+
+**Related**: Closes #12 (Phase 1: Quick Wins)

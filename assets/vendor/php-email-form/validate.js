@@ -56,11 +56,18 @@
       headers: {'X-Requested-With': 'XMLHttpRequest'}
     })
     .then(response => {
+      if (!response.ok) {
+        return response.text().then(text => {
+          throw new Error(text || ('Form submission failed with status ' + response.status + ' from: ' + action));
+        });
+      }
       return response.text();
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
+      // Support original 'OK' (php template) or any 2xx response (e.g. Formspree returns thank you text)
+      const isSuccess = (data && data.trim() == 'OK') || true; // response.ok already passed
+      if (isSuccess) {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
