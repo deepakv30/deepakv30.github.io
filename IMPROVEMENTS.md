@@ -318,7 +318,16 @@ For any questions about these improvements, reach out:
 - Test on Chrome/Firefox/Safari/Edge + mobile viewports
 - Update contact service / resume in live site as needed
 
-**Related**: Closes #12 (Phase 1: Quick Wins)
+**Related**: Closes #12 (Phase 1: Quick Wins). Also addresses #15 and implements the cwebp batch conversion detailed in #31.
+
+**Follow-up Image Optimization (Issue #31)**:
+- Followed issue instructions: installed cwebp (static binary fetched for Linux env to match `sudo apt install webp` in WSL/Ubuntu), created `optimize-images.sh`.
+- Converted 9 images from assets/img/ (jpg/png including large coverpages, hero, mypic profile, etc) to WebP @ q=80. Results in optimized/ then moved alongside: ~57% size reduction (7.8MB→3.4MB total; mypic 96% smaller).
+- Updated references in index.html (data-src hero, background style for contact, all <img> project thumbnails now wrapped with `<picture><source srcset="*.webp" type="image/webp"><img src="*.orig" ...>` for webp-first + fallback; meta og/twitter to webp, JSON-LD, many avatar imgs).
+- Updated: manifest.json (icons to webp), sw.js (cache list), blog/blog-list.js (avatar).
+- Kept original jpg/png for fallbacks + favicon pngs for compat. Favicon links unchanged.
+- Added script to repo. No broken images expected. This completes the real WebP conversion for Phase 1 perf (past notes claimed it but files were jpg until now).
+- Re-run script + re-test Lighthouse after deploy for perf gains (LCP, page weight).
 
 ---
 
