@@ -28,6 +28,19 @@ This document outlines all the improvements made to the portfolio website on Oct
 
 ---
 
+## 🐛 Bugs & Fixes (Issue #18)
+**Addressed in Phase 1/2 work + this update**
+
+- ✅ Contact form non-functional (commented out): Enabled with FormSubmit.co + validation + honeypot (see Phase 1).
+- ✅ Resume download broken/commented: Button enabled and live; ready for PDF (updated comment in index.html for clarity).
+- ✅ Blog 'View More' leads to empty page: Populated via blog-list.js + recent articles + RSS (Phase 2).
+- ✅ Project showcases limited/outdated; fix paths if needed: Enhanced with DevSecOps projects, metrics, badges, fixed paths/rel attrs (Phase 2 + image path fixes).
+- ✅ Analytics commented out: Enabled with Plausible (privacy-friendly).
+
+All covered by Phase work; minor polish in this PR (resume comment). See issues #15/#16 for details.
+
+---
+
 ## ✨ Major Enhancements Added
 
 ### 1. **SEO Optimization**
@@ -249,9 +262,9 @@ For any questions about these improvements, reach out:
 
 ---
 
-**Last Updated**: October 26, 2025  
-**Version**: 2.0  
-**Status**: ✅ All improvements implemented and tested
+**Last Updated**: 2026-06-14  
+**Version**: 2.4  
+**Status**: ✅ All improvements implemented and tested (cross-referenced to current GitHub issues #15-19)
 
 ---
 
