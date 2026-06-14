@@ -1,0 +1,54 @@
+name: CI - Performance, Build & Polish Checks (Phase 3)
+
+on:
+  push:
+    branches: [ master, main, 'feat/*' ]
+  pull_request:
+    branches: [ master, main ]
+
+jobs:
+  build-and-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node (for potential future minification / lighthouse)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Report asset sizes (perf baseline)
+        run: |
+          echo "=== Asset size report (Phase 3 perf focus) ==="
+          du -sh assets/ || true
+          find assets -type f \( -name "*.css" -o -name "*.js" \) | head -10 | xargs -I {} sh -c 'echo -n "{}: "; du -h {}' || true
+          echo "Custom files:"
+          ls -lh assets/css/style.css assets/js/main.js || true
+          echo "Note: Unused heavy vendors (glightbox ~150k, swiper ~150k+, purecounter) were removed in Phase 3."
+
+      # Future: add real minify step e.g.
+      # - run: npm install -g terser cssnano-cli html-minifier
+      #   then minify copies to dist/ and update pages if using custom domain build.
+      # For pure GH Pages we serve source (readable is preferred).
+
+      - name: Lighthouse CI placeholder (run locally with npx lighthouse https://deepakv30.github.io/ --output=json)
+        run: |
+          echo "Run locally: npx lighthouse https://deepakv30.github.io/ --view"
+          echo "Target after Phase 3 optimizations (script cleanup + PWA + headers + OG): Performance 90+, Accessibility 90+, SEO 95+, Best Practices 90+."
+          echo "Core Web Vitals: LCP improved by removing render-blocking unused JS/CSS."
+
+      - name: Validate PWA manifest (basic)
+        run: |
+          if [ -f manifest.json ]; then
+            echo "manifest.json present ✓"
+            cat manifest.json | head -c 300
+          fi
+          if [ -f sw.js ]; then echo "sw.js present ✓"; fi
+          if [ -f _headers ]; then echo "_headers present ✓"; fi
+
+      - name: Basic a11y/SEO grep checks
+        run: |
+          echo "Checking for key a11y/ARIA..."
+          grep -c 'aria-label\|role=\|visually-hidden\|alt=' index.html || echo "review manually"
+          echo "OG image updated? "
+          grep og:image index.html | cat
