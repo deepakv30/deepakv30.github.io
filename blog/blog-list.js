@@ -72,7 +72,7 @@ function renderBlogs(blogsToRender) {
         <div class="card-footer">
           <div class="post-author">
             <a href="#">
-              <img src="../assets/img/mypic-removebg-preview.png" alt="" class="avatar rounded-circle">
+              <img src="../assets/img/mypic-removebg-preview.webp" alt="" class="avatar rounded-circle">
               <span class="author">${blog.author}</span>
             </a>
           </div>

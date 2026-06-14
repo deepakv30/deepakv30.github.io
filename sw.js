@@ -14,11 +14,11 @@ const ASSETS_TO_CACHE = [
   '/assets/vendor/typed.js/typed.min.js',
   '/assets/vendor/bootstrap/js/bootstrap.bundle.min.js',
   '/assets/vendor/php-email-form/validate.js',
-  '/assets/img/mypic-removebg-preview.png',
-  '/assets/img/hero-bg.jpg',
-  '/assets/img/overlay-bg.jpg',
-  '/assets/img/Todo-Application.png',
-  '/assets/img/hero-bg2.jpg',
+  '/assets/img/mypic-removebg-preview.webp',
+  '/assets/img/hero-bg.webp',
+  '/assets/img/overlay-bg.webp',
+  '/assets/img/Todo-Application.webp',
+  '/assets/img/hero-bg2.webp',
   // Add more images or pages (blog) as needed for fuller offline
 ];
 
