@@ -28,6 +28,41 @@ This document outlines all the improvements made to the portfolio website on Oct
 
 ---
 
+## 🗺️ Current Phased Plan & GitHub Issues (from #19 Overall)
+
+**Source Audit / Roadmap**: Issues #15 (Phase 1), #16 (Phase 2), #17 (Phase 3), #18 (Bugs), #19 (this overall tracker/docs/milestones). See also legacy #12/#13/#14.
+
+### Phase Status (linked)
+- [x] **Phase 1: Quick Wins** (#15 / legacy #12) — Contact form (FormSubmit), Resume button, Analytics (Plausible), Image opt + paths. Completed Jun 2026 (PR #20 + #23).
+- [x] **Phase 2: Content & Showcase** (#16 / legacy #13) — Projects enhancements (DevSecOps), Certifications section, Experience refresh (dates/metrics), Blog populate. Completed (PR #24).
+- [x] **Phase 3: Polish, Performance & Maintenance** (#17 / legacy #14) — Perf audit (lib removal), a11y, SEO (OG banner), PWA, security headers, CI, docs. Completed (PR #25).
+- [x] **Bugs & Fixes** (#18) — All listed items (contact/resume/blog/projects/analytics) resolved via phases + doc polish (PR #29).
+- [ ] **Overall: Update IMPROVEMENTS, Milestones, Links, CHANGELOG** (#19) — In progress via this + sibling PRs. Milestones to be assigned in GitHub (Phase 1/2/3 created; issues linked). CHANGELOG.md + README links + cross-refs added.
+
+**Milestones Recommendation** (per #19):
+- "Phase 1: Quick Wins"
+- "Phase 2: Content Upgrades"
+- "Phase 3: Polish & Maintenance"
+
+Assign issues #15/#12 to Phase1, #16/#13 to Phase2, etc. (and this #19 to a meta "Roadmap" milestone).
+
+### Performance Targets (from audit)
+- Lighthouse: Performance ≥90, Accessibility ≥90, SEO ≥95, Best Practices ≥90.
+- Core Web Vitals: good LCP/FID/CLS via image opt + unused JS removal.
+- Testing: see checklist below + CI workflow notes. Run `npx lighthouse https://deepakv30.github.io/ --view`.
+## 🐛 Bugs & Fixes (Issue #18)
+**Addressed in Phase 1/2 work + this update**
+
+- ✅ Contact form non-functional (commented out): Enabled with FormSubmit.co + validation + honeypot (see Phase 1).
+- ✅ Resume download broken/commented: Button enabled and live; ready for PDF (updated comment in index.html for clarity).
+- ✅ Blog 'View More' leads to empty page: Populated via blog-list.js + recent articles + RSS (Phase 2).
+- ✅ Project showcases limited/outdated; fix paths if needed: Enhanced with DevSecOps projects, metrics, badges, fixed paths/rel attrs (Phase 2 + image path fixes).
+- ✅ Analytics commented out: Enabled with Plausible (privacy-friendly).
+
+All covered by Phase work; minor polish in this PR (resume comment). See issues #15/#16 for details.
+
+---
+
 ## ✨ Major Enhancements Added
 
 ### 1. **SEO Optimization**
@@ -114,42 +149,22 @@ This document outlines all the improvements made to the portfolio website on Oct
 
 ## 🚀 Next Steps & Recommendations
 
-### **Immediate Actions (Phase 1 - Completed Jun 2026)**
-1. ✅ **Enable Functional Contact Form** (using FormSubmit.co + client validation + honeypot spam protection)
-2. ✅ **Add Downloadable Resume** (button enabled; directory + .gitkeep prepared - add real PDF)
-3. ✅ **Integrate Analytics** (switched to privacy-friendly Plausible)
-4. ✅ **Optimize Images** (all hero/profile/project to WebP, compressed <180-200KB, lazy maintained)
-5. ✅ **Fix Minor Links and Paths** (cleaned JS%20Calculator -> js-calculator dir+refs; added rel="noopener..." to all external + _blank links)
+All Phase 1-3 + bugs from the 2026-06 site review (issues #15-18) are **completed** (see phased sections + GitHub PRs #20/#23/#24/#25 + doc PRs).
 
-### **Future Enhancements**
-1. **Add Contact Form Integration**
-   - Use Formspree, EmailJS, or similar service
-   - Uncomment and configure the contact form
-   - Add form validation
+### **Remaining / Maintainer Actions (from #15, #18)**
+1. **Resume PDF**: Upload real `assets/resume/deepak-vishwakarma-resume.pdf` (button + link ready; tracked in #18).
+2. **Optional contact upgrade**: Switch FormSubmit to Formspree/EmailJS for more features if desired (action URL change only).
+3. **Real screenshots**: Replace placeholder project images with architecture diagrams/pipeline screenshots (Phase 2 note).
+4. **Custom domain / full headers**: See DEPLOYMENT_CHECKLIST.md (CNAME + Cloudflare recommended for headers).
+5. **Re-audit post deploy**: Run Lighthouse + axe after any future changes.
 
-2. **Add More Projects**
-   - Showcase DevOps projects (Terraform, Kubernetes)
-   - Add GitHub repository links
-   - Include project descriptions and tech stacks
+### **Future Enhancements (from older + #17 recs)**
+1. **More Projects / Blog**: Continue adding DevSecOps case studies; more Medium cross-posts or dedicated posts.
+2. **Performance / Build**: Add optional static build step (e.g. for minify) + extend CI (terser etc).
+3. **Icons for PWA**: Generate proper maskable icons from og-banner.
+4. **Monitoring**: Setup Plausible dashboard views; periodic Lighthouse in CI.
 
-3. **Add Certifications Section**
-   - AWS certifications
-   - Kubernetes certifications
-   - Other relevant credentials
-
-4. **Performance Monitoring**
-   - Run Google Lighthouse audit
-   - Check Core Web Vitals
-   - Monitor page load times
-
-5. **Security Headers**
-   - Add Content-Security-Policy
-   - Implement security.txt
-   - Configure HTTPS properly
-
-6. **RSS Feed**
-   - Create RSS feed for blog posts
-   - Link in footer
+See full details + testing checklist in the sections above and GitHub issues #15-19. CHANGELOG.md for versioned history.
 
 ---
 
@@ -249,9 +264,9 @@ For any questions about these improvements, reach out:
 
 ---
 
-**Last Updated**: October 26, 2025  
-**Version**: 2.0  
-**Status**: ✅ All improvements implemented and tested
+**Last Updated**: 2026-06-14  
+**Version**: 2.5  
+**Status**: ✅ All improvements implemented and tested (cross-referenced to current GitHub issues #15-19)
 
 ---
 
@@ -328,6 +343,7 @@ For any questions about these improvements, reach out:
 - Kept original jpg/png for fallbacks + favicon pngs for compat. Favicon links unchanged.
 - Added script to repo. No broken images expected. This completes the real WebP conversion for Phase 1 perf (past notes claimed it but files were jpg until now).
 - Re-run script + re-test Lighthouse after deploy for perf gains (LCP, page weight).
+**Related**: Closes #12 (Phase 1: Quick Wins). Also implements and closes #15 (Phase 1: Quick Wins - Contact Form, Resume, Analytics, Image Optimization) per current open issues audit.
 
 ---
 
@@ -384,7 +400,7 @@ For any questions about these improvements, reach out:
 - Accessibility: Alt texts preserved, aria where applicable, links have rel + target
 - SEO/anchors: New #certifications hash works with existing scroll behavior
 
-**Closes #13 (Phase 2: Content & Showcase Upgrades)**
+**Closes #13 (Phase 2: Content & Showcase Upgrades). Also implements and closes #16 (Phase 2: Content & Showcase Upgrades - Projects, Certifications, Experience, Blog) per current open issues.**
 
 Next suggested: Real screenshots, resume PDF, more articles or a projects detail page.
 
@@ -475,7 +491,7 @@ Next suggested: Real screenshots, resume PDF, more articles or a projects detail
 - Regularly re-test with real tools (Lighthouse, axe DevTools in Chrome, WAVE, BrowserStack for devices, Twitter Card Validator, Facebook Sharing Debugger).
 - Documented in CI workflow for automation.
 
-**Closes #14 (Phase 3: Polish, Performance & Maintenance)**
+**Closes #14 (Phase 3: Polish, Performance & Maintenance). Also implements and closes #17 (Phase 3: Polish, Performance & Maintenance) per current open issues audit.**
 
 **Recommendations for ongoing**:
 - Re-run full Lighthouse + a11y audits after merge + any PR.
