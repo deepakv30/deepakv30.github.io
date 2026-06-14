@@ -318,7 +318,7 @@ For any questions about these improvements, reach out:
 - Test on Chrome/Firefox/Safari/Edge + mobile viewports
 - Update contact service / resume in live site as needed
 
-**Related**: Closes #12 (Phase 1: Quick Wins)
+**Related**: Closes #12 (Phase 1: Quick Wins). Also implements and closes #15 (Phase 1: Quick Wins - Contact Form, Resume, Analytics, Image Optimization) per current open issues audit.
 
 ---
 
