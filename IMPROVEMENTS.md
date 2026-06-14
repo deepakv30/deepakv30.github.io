@@ -250,7 +250,7 @@ For any questions about these improvements, reach out:
 ---
 
 **Last Updated**: 2026-06-14  
-**Version**: 2.1  
+**Version**: 2.2  
 **Status**: ✅ All improvements implemented and tested (cross-referenced to current GitHub issues #15-19)
 
 ---
@@ -375,7 +375,7 @@ For any questions about these improvements, reach out:
 - Accessibility: Alt texts preserved, aria where applicable, links have rel + target
 - SEO/anchors: New #certifications hash works with existing scroll behavior
 
-**Closes #13 (Phase 2: Content & Showcase Upgrades)**
+**Closes #13 (Phase 2: Content & Showcase Upgrades). Also implements and closes #16 (Phase 2: Content & Showcase Upgrades - Projects, Certifications, Experience, Blog) per current open issues.**
 
 Next suggested: Real screenshots, resume PDF, more articles or a projects detail page.
 
