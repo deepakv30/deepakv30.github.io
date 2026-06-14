@@ -50,6 +50,16 @@ Assign issues #15/#12 to Phase1, #16/#13 to Phase2, etc. (and this #19 to a meta
 - Lighthouse: Performance ≥90, Accessibility ≥90, SEO ≥95, Best Practices ≥90.
 - Core Web Vitals: good LCP/FID/CLS via image opt + unused JS removal.
 - Testing: see checklist below + CI workflow notes. Run `npx lighthouse https://deepakv30.github.io/ --view`.
+## 🐛 Bugs & Fixes (Issue #18)
+**Addressed in Phase 1/2 work + this update**
+
+- ✅ Contact form non-functional (commented out): Enabled with FormSubmit.co + validation + honeypot (see Phase 1).
+- ✅ Resume download broken/commented: Button enabled and live; ready for PDF (updated comment in index.html for clarity).
+- ✅ Blog 'View More' leads to empty page: Populated via blog-list.js + recent articles + RSS (Phase 2).
+- ✅ Project showcases limited/outdated; fix paths if needed: Enhanced with DevSecOps projects, metrics, badges, fixed paths/rel attrs (Phase 2 + image path fixes).
+- ✅ Analytics commented out: Enabled with Plausible (privacy-friendly).
+
+All covered by Phase work; minor polish in this PR (resume comment). See issues #15/#16 for details.
 
 ---
 
@@ -323,7 +333,7 @@ For any questions about these improvements, reach out:
 - Test on Chrome/Firefox/Safari/Edge + mobile viewports
 - Update contact service / resume in live site as needed
 
-**Related**: Closes #12 (Phase 1: Quick Wins)
+**Related**: Closes #12 (Phase 1: Quick Wins). Also implements and closes #15 (Phase 1: Quick Wins - Contact Form, Resume, Analytics, Image Optimization) per current open issues audit.
 
 ---
 
@@ -380,7 +390,7 @@ For any questions about these improvements, reach out:
 - Accessibility: Alt texts preserved, aria where applicable, links have rel + target
 - SEO/anchors: New #certifications hash works with existing scroll behavior
 
-**Closes #13 (Phase 2: Content & Showcase Upgrades)**
+**Closes #13 (Phase 2: Content & Showcase Upgrades). Also implements and closes #16 (Phase 2: Content & Showcase Upgrades - Projects, Certifications, Experience, Blog) per current open issues.**
 
 Next suggested: Real screenshots, resume PDF, more articles or a projects detail page.
 
@@ -471,7 +481,7 @@ Next suggested: Real screenshots, resume PDF, more articles or a projects detail
 - Regularly re-test with real tools (Lighthouse, axe DevTools in Chrome, WAVE, BrowserStack for devices, Twitter Card Validator, Facebook Sharing Debugger).
 - Documented in CI workflow for automation.
 
-**Closes #14 (Phase 3: Polish, Performance & Maintenance)**
+**Closes #14 (Phase 3: Polish, Performance & Maintenance). Also implements and closes #17 (Phase 3: Polish, Performance & Maintenance) per current open issues audit.**
 
 **Recommendations for ongoing**:
 - Re-run full Lighthouse + a11y audits after merge + any PR.
