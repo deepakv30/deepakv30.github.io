@@ -249,9 +249,9 @@ For any questions about these improvements, reach out:
 
 ---
 
-**Last Updated**: October 26, 2025  
-**Version**: 2.0  
-**Status**: ✅ All improvements implemented and tested
+**Last Updated**: 2026-06-14  
+**Version**: 2.3  
+**Status**: ✅ All improvements implemented and tested (cross-referenced to current GitHub issues #15-19)
 
 ---
 
@@ -466,7 +466,7 @@ Next suggested: Real screenshots, resume PDF, more articles or a projects detail
 - Regularly re-test with real tools (Lighthouse, axe DevTools in Chrome, WAVE, BrowserStack for devices, Twitter Card Validator, Facebook Sharing Debugger).
 - Documented in CI workflow for automation.
 
-**Closes #14 (Phase 3: Polish, Performance & Maintenance)**
+**Closes #14 (Phase 3: Polish, Performance & Maintenance). Also implements and closes #17 (Phase 3: Polish, Performance & Maintenance) per current open issues audit.**
 
 **Recommendations for ongoing**:
 - Re-run full Lighthouse + a11y audits after merge + any PR.
