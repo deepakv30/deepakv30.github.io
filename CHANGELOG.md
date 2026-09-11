@@ -5,6 +5,18 @@ All notable changes to the deepakv30.github.io portfolio site.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.6] - 2026-09-11
+
+### Added
+- Resume PDF at `assets/resume/deepak-vishwakarma-resume.pdf` (facts from the live site only; generator in `scripts/generate-resume.py`) (#39).
+
+### Changed / Fixed
+- Featured GitLab CI/CD + ArgoCD card no longer links to the 404 repo `github.com/deepakv30/Ultimate_CICD`. Marked private; walkthrough CTA goes to LinkedIn (#40).
+- Certification buttons say “About this cert” and open issuer pages (not personal badge IDs). GitLab URL no longer 404s (#41).
+- IMPROVEMENTS.md resume status matches production; sitemap `lastmod` bumped and hash-only URLs removed (#46).
+
+**Closes #39, #40, #41, #46**
+
 ## [2.5] - 2026-09-11
 
 ### Added
