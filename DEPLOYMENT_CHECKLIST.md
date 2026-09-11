@@ -10,8 +10,8 @@
 - [x] Updated social media links
 - [x] Added Skills section
 - [x] Added Experience & Achievements section
-- [ ] Upload resume PDF to `assets/resume/` (if applicable)
-- [ ] Update dates and timestamps
+- [x] Upload resume PDF to `assets/resume/` (if applicable)
+- [x] Update dates and timestamps (`sitemap.xml` lastmod 2026-09-11)
 
 ### Performance
 - [x] Added lazy loading for images

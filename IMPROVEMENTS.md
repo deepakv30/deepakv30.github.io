@@ -54,7 +54,7 @@ Assign issues #15/#12 to Phase1, #16/#13 to Phase2, etc. (and this #19 to a meta
 **Addressed in Phase 1/2 work + this update**
 
 - ✅ Contact form non-functional (commented out): Enabled with FormSubmit.co + validation + honeypot (see Phase 1).
-- ✅ Resume download broken/commented: Button enabled and live; ready for PDF (updated comment in index.html for clarity).
+- ✅ Resume download broken/commented: Button enabled; PDF shipped at `assets/resume/deepak-vishwakarma-resume.pdf` (#39).
 - ✅ Blog 'View More' leads to empty page: Populated via blog-list.js + recent articles + RSS (Phase 2).
 - ✅ Project showcases limited/outdated; fix paths if needed: Enhanced with DevSecOps projects, metrics, badges, fixed paths/rel attrs (Phase 2 + image path fixes).
 - ✅ Analytics commented out: Enabled with Plausible (privacy-friendly).
@@ -116,7 +116,7 @@ All covered by Phase work; minor polish in this PR (resume comment). See issues 
 ### 6. **Call-to-Action Buttons**
 - LinkedIn profile button
 - GitHub profile button
-- Resume download button (commented, ready to activate)
+- Resume download button (PDF at `assets/resume/deepak-vishwakarma-resume.pdf`, shipped in #39)
 
 ### 7. **Performance Optimizations**
 - Lazy loading for images
@@ -152,11 +152,12 @@ All covered by Phase work; minor polish in this PR (resume comment). See issues 
 All Phase 1-3 + bugs from the 2026-06 site review (issues #15-18) are **completed** (see phased sections + GitHub PRs #20/#23/#24/#25 + doc PRs).
 
 ### **Remaining / Maintainer Actions (from #15, #18)**
-1. **Resume PDF**: Upload real `assets/resume/deepak-vishwakarma-resume.pdf` (button + link ready; tracked in #18).
+1. **Resume PDF**: Shipped at `assets/resume/deepak-vishwakarma-resume.pdf` (#39). Facts match on-site experience/certs; regenerate with `python3 scripts/generate-resume.py` if copy changes.
 2. **Optional contact upgrade**: Switch FormSubmit to Formspree/EmailJS for more features if desired (action URL change only).
-3. **Real screenshots**: Replace placeholder project images with architecture diagrams/pipeline screenshots (Phase 2 note).
+3. **Real screenshots**: Replace placeholder project images with architecture diagrams/pipeline screenshots (Phase 2 note; still open as #44).
 4. **Custom domain / full headers**: See DEPLOYMENT_CHECKLIST.md (CNAME + Cloudflare recommended for headers).
 5. **Re-audit post deploy**: Run Lighthouse + axe after any future changes.
+6. **Personal cert badges**: Cert CTAs are labeled “About this cert” (issuer pages) until personal Credly/CNCF/HashiCorp URLs exist (#41).
 
 ### **Future Enhancements (from older + #17 recs)**
 1. **More Projects / Blog**: Continue adding DevSecOps case studies; more Medium cross-posts or dedicated posts.
@@ -292,7 +293,7 @@ For any questions about these improvements, reach out:
 2. **Downloadable Resume**
    - Created `assets/resume/` directory + `.gitkeep`
    - Uncommented + styled the Download Resume button in About section (links to deepak-vishwakarma-resume.pdf)
-   - **Action for maintainer**: Upload the optimized PDF to complete this
+   - **Completed (#39, 2026-09-11)**: PDF generated from on-site facts only (no new employers, dates, or metrics).
 
 3. **Privacy-Friendly Analytics**
    - Replaced commented Google Analytics block with Plausible.io script (defer, data-domain set)
@@ -327,7 +328,7 @@ For any questions about these improvements, reach out:
 ### Post-Deploy / Testing Notes:
 - Test the contact form end-to-end (it now uses FormSubmit.co and should just work)
 - If you prefer Formspree (more features), change the form `action` to your https://formspree.io/f/xxxx ID
-- Add real resume PDF to `assets/resume/deepak-vishwakarma-resume.pdf` and test the download button
+- Resume PDF is live at `assets/resume/deepak-vishwakarma-resume.pdf` (#39)
 - Verify Plausible tracking after deploy (github pages)
 - Re-run Lighthouse (target perf >90)
 - Test on Chrome/Firefox/Safari/Edge + mobile viewports
@@ -364,7 +365,7 @@ For any questions about these improvements, reach out:
 - **New Certifications Section**
   - Added dedicated `#certifications` section (4 credential cards)
   - Includes: AWS DevOps Professional, CKA, Terraform Associate, GitLab CI/CD Associate
-  - Badges/icons, dates, "Verify" links (Credly / official)
+  - Badges/icons, dates, “About this cert” links to issuer pages (personal badge URLs not published; see #41)
   - Styled cards with hover lift + consistent with site dark/light themes
 
 - **Refreshed Experience & Achievements**
@@ -395,14 +396,14 @@ For any questions about these improvements, reach out:
 
 ### Post-Implementation Notes
 - Images: Reused available assets/img files (no new large binaries). Future: replace placeholders with real architecture diagrams / pipeline screenshots.
-- Resume: Still pending (see Phase 1 notes)
+- Resume: PDF shipped (#39); regenerate via `scripts/generate-resume.py` if site copy changes
 - Testing performed: Local static serve, visual inspection of cards/sections on desktop + assumed mobile (Bootstrap grid)
 - Accessibility: Alt texts preserved, aria where applicable, links have rel + target
 - SEO/anchors: New #certifications hash works with existing scroll behavior
 
 **Closes #13 (Phase 2: Content & Showcase Upgrades). Also implements and closes #16 (Phase 2: Content & Showcase Upgrades - Projects, Certifications, Experience, Blog) per current open issues.**
 
-Next suggested: Real screenshots, resume PDF, more articles or a projects detail page.
+Next suggested: Real screenshots (#44), featured-card problem/approach/result (#43), more articles or a projects detail page.
 
 ---
 
