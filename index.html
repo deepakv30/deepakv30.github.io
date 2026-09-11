@@ -32,9 +32,11 @@
   <meta name="theme-color" content="#0078ff">
   <link rel="canonical" href="https://deepakv30.github.io/">
 
-  <!-- Favicons -->
-  <link href="assets/img/mypic-removebg-preview.png" rel="icon">
-  <link href="assets/img/mypic-removebg-preview.png" rel="apple-touch-icon">
+  <!-- Favicons (WebP first; PNG fallback). Shared avatar is preloaded for project cards. -->
+  <link rel="icon" type="image/webp" href="assets/img/logo.webp">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link rel="apple-touch-icon" href="assets/img/logo.png">
+  <link rel="preload" as="image" href="assets/img/mypic-removebg-preview.webp" type="image/webp">
 
   <!-- Vendor CSS Files (optimized: removed unused glightbox + swiper for perf) -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -151,14 +153,19 @@
 
 <body>
 
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Welcome To DevOps World</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo
-      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="DeepakV Logo" class="img-fluid"></a>
-      -->
+      <a href="index.html" class="logo d-flex align-items-center" aria-label="Deepak Vishwakarma home">
+        <picture>
+          <source srcset="assets/img/logo.webp" type="image/webp">
+          <img src="assets/img/logo.png" alt="" width="40" height="40" class="img-fluid" onerror="this.style.display='none'">
+        </picture>
+        <span>Welcome To DevOps World</span>
+      </a>
 
       <nav id="navbar" class="navbar">
         <ul>

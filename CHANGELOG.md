@@ -5,6 +5,18 @@ All notable changes to the deepakv30.github.io portfolio site.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.5] - 2026-09-11
+
+### Added
+- Header logo assets (`logo.webp` / `logo.png` / `logo.svg`) so the mark no longer 404s (#34).
+- Skip-to-main-content link for keyboard and screen-reader users (#36).
+- Shared avatar WebP preload; favicon now uses the logo WebP with PNG fallback (#35).
+
+### Changed / Fixed
+- Documented that `_headers` is **not** applied by GitHub Pages. CSP / `X-Frame-Options` / nosniff are aspirational until a CDN sits in front (#37).
+
+**Closes #34, #35, #36, #37**
+
 ## [2.4] - 2026-06-14
 
 ### Added / Documentation

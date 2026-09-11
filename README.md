@@ -11,16 +11,7 @@ Personal portfolio website for Deepak Vishwakarma (DevSecOps Engineer).
 - [sitemap.xml](sitemap.xml) | [robots.txt](robots.txt)
 
 ## Project Tracking (GitHub)
-Current open improvement issues (phased plan + bugs + overall):
-- [#15 Phase 1: Quick Wins](https://github.com/deepakv30/deepakv30.github.io/issues/15) (Contact, Resume, Analytics, Images)
-- [#16 Phase 2: Content & Showcase](https://github.com/deepakv30/deepakv30.github.io/issues/16) (Projects, Certs, Experience, Blog)
-- [#17 Phase 3: Polish, Performance & Maintenance](https://github.com/deepakv30/deepakv30.github.io/issues/17)
-- [#18 Bugs & Fixes](https://github.com/deepakv30/deepakv30.github.io/issues/18)
-- [#19 Overall: Roadmap, Milestones, Docs](https://github.com/deepakv30/deepakv30.github.io/issues/19)
-
-Legacy/related: #12, #13, #14 (closed by prior PRs #20, #24, #25)
-
-See the [issues page](https://github.com/deepakv30/deepakv30.github.io/issues) for full roadmap.
+See the [issues page](https://github.com/deepakv30/deepakv30.github.io/issues) for the current roadmap. Phases 1–3 (#15–#19) shipped; later a11y/perf/security follow-ups are filed separately (#34–#37).
 
 ## Local Development
 ```bash
@@ -36,7 +27,13 @@ See IMPROVEMENTS.md "Testing Checklist", "Next Steps", and GitHub milestones (wh
 PRs welcome for new projects, blog posts, or perf/a11y tweaks.
 
 ## Tech
-Static HTML/CSS/JS (Bootstrap 5, vanilla, icons). Hosted on GitHub Pages. PWA + security headers supported.
+Static HTML/CSS/JS (Bootstrap 5, vanilla, icons). Hosted on GitHub Pages.
+
+## Security headers
+
+The repo includes a Netlify-style [`_headers`](_headers) file (CSP, `X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`). **GitHub Pages does not apply `_headers`.** Live responses on https://deepakv30.github.io/ only include GitHub's HSTS.
+
+Treat `_headers` as the policy we would enforce behind Cloudflare/Netlify, not as live protection. To actually ship those headers, put a CDN in front of Pages and map the same policies. Do not cite `_headers` in audits as evidence of CSP or clickjacking defenses on GitHub Pages.
 
 ## Contact
 - Email: deepakv.knit@gmail.com
