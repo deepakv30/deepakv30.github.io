@@ -1,6 +1,12 @@
-# GitHub Pages / Netlify-style headers for security (Phase 3)
-# Note: GitHub Pages has limited native support for custom response headers (some features via this file in publish dir).
-# For full control consider Cloudflare or similar in front. These provide defense-in-depth.
+# Aspirational Netlify-style header map. NOT applied by GitHub Pages.
+#
+# GitHub Pages ignores this file. Live responses on https://deepakv30.github.io/
+# only include GitHub's HSTS (strict-transport-security). CSP, X-Frame-Options,
+# X-Content-Type-Options, Referrer-Policy, and Permissions-Policy below do NOT
+# protect production until the site is fronted by Cloudflare, Netlify, or
+# another CDN that honors `_headers` (or equivalent page rules).
+#
+# Keep this file as the policy we would enforce behind that CDN.
 
 /*
   X-Content-Type-Options: nosniff

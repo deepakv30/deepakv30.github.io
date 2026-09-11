@@ -17,7 +17,7 @@
 - [x] Added lazy loading for images
 - [x] Implemented hero image lazy loading
 - [ ] Compress all images (use TinyPNG or similar)
-- [ ] Convert images to WebP format (optional)
+- [x] Convert homepage images to WebP with PNG/JPG fallback (`<picture>`)
 - [ ] Minify CSS and JS files (optional for production)
 
 ### SEO & Analytics
@@ -32,7 +32,8 @@
 ### Security
 - [x] Added rel="noopener" to external links
 - [x] Used HTTPS links where possible
-- [ ] Configure Content-Security-Policy headers
+- [x] Documented that `_headers` is **not** applied by GitHub Pages (see README)
+- [ ] Front the site with Cloudflare (or similar) to enforce CSP / `X-Frame-Options` / `X-Content-Type-Options`
 - [ ] Set up security.txt (optional)
 
 ### Functionality
