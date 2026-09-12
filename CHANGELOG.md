@@ -5,6 +5,14 @@ All notable changes to the deepakv30.github.io portfolio site.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.11] - 2026-09-12
+
+### Added
+- Featured DevSecOps cards now use Problem → Approach → Result, with metrics taken only from the Experience section (#43).
+- Distinct WebP+JPEG images per featured card (live Mastery Guide screenshot plus GitOps / Terraform / Observability diagrams). Apna Hisab keeps its dedicated screenshot (#44).
+
+**Closes #43, #44**
+
 ## [2.10] - 2026-09-12
 
 ### Changed / Fixed
