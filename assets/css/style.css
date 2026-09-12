@@ -11,6 +11,29 @@ body {
   color: #4e4e4e;
 }
 
+.theme-toggle {
+  position: fixed;
+  bottom: 80px;
+  right: 15px;
+  z-index: 996;
+  background: #0078ff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+
 /* Skip link: visually hidden until focused (WCAG 2.4.1 Bypass Blocks) */
 .skip-link {
   position: absolute;
@@ -577,6 +600,80 @@ a:hover {
 #header.header-scrolled {
   background: rgba(0, 0, 0, 0.9);
   padding: 12px 0;
+}
+
+/* Inner pages (blog): light header + dark nav so text is not white-on-white */
+body.page-inner #header,
+body.page-inner #header.header-scrolled {
+  background: #ffffff;
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.08);
+}
+
+body.page-inner #header .logo,
+body.page-inner #header .logo a,
+body.page-inner .navbar a,
+body.page-inner .navbar a:focus,
+body.page-inner .mobile-nav-toggle {
+  color: #1a1a1a;
+}
+
+body.page-inner .navbar a:hover,
+body.page-inner .navbar .active,
+body.page-inner .navbar .active:focus,
+body.page-inner .navbar li:hover>a {
+  color: #0056b3;
+}
+
+body.page-inner .navbar>ul>li>a:before {
+  background-color: #0056b3;
+}
+
+body.page-inner.dark-mode {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.page-inner.dark-mode h1,
+body.page-inner.dark-mode h2,
+body.page-inner.dark-mode h3,
+body.page-inner.dark-mode h4,
+body.page-inner.dark-mode h5,
+body.page-inner.dark-mode h6 {
+  color: #ffffff;
+}
+
+body.page-inner.dark-mode #header,
+body.page-inner.dark-mode #header.header-scrolled {
+  background: rgba(0, 0, 0, 0.92);
+  box-shadow: none;
+}
+
+body.page-inner.dark-mode #header .logo,
+body.page-inner.dark-mode #header .logo a,
+body.page-inner.dark-mode .navbar a,
+body.page-inner.dark-mode .navbar a:focus,
+body.page-inner.dark-mode .mobile-nav-toggle {
+  color: #f2f2f2;
+}
+
+body.page-inner.dark-mode .navbar a:hover,
+body.page-inner.dark-mode .navbar .active,
+body.page-inner.dark-mode .navbar .active:focus,
+body.page-inner.dark-mode .navbar li:hover>a {
+  color: #ffffff;
+}
+
+body.page-inner.dark-mode .navbar>ul>li>a:before {
+  background-color: #ffffff;
+}
+
+body.page-inner.dark-mode .navbar-mobile a,
+body.page-inner.dark-mode .navbar-mobile a:focus,
+body.page-inner.dark-mode .navbar-mobile a:hover,
+body.page-inner.dark-mode .navbar-mobile .active,
+body.page-inner.dark-mode .navbar-mobile li:hover>a,
+body.page-inner.dark-mode .navbar-mobile .mobile-nav-toggle {
+  color: #1a1a1a;
 }
 
 /*--------------------------------------------------------------
