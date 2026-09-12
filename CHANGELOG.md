@@ -5,6 +5,16 @@ All notable changes to the deepakv30.github.io portfolio site.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.7] - 2026-09-12
+
+### Added
+- Experience in the primary nav (desktop and mobile) and first-screen hire CTAs: Contact, Resume, LinkedIn (#42).
+
+### Changed / Fixed
+- Sticky header no longer covers section headings. `scroll-padding-top` plus `scrollIntoView` keep `#experience` and other in-page jumps fully visible (#48).
+
+**Closes #42, #48**
+
 ## [2.6] - 2026-09-11
 
 ### Added
