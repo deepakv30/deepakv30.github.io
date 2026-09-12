@@ -527,7 +527,7 @@
         <!-- Featured DevSecOps Projects -->
         <div class="row mb-2">
           <div class="col-12">
-            <h5 class="text-center mb-3" style="color:#1e1e1e; font-weight:600;">Featured DevSecOps Projects</h5>
+            <h5 class="text-center mb-3 projects-kicker">Featured DevSecOps Projects</h5>
           </div>
         </div>
         <div class="row">
@@ -535,7 +535,7 @@
           <div class="col-md-4 mb-4">
             <div class="card card-project">
               <div class="card-img">
-                <a href="https://deepakv30.github.io/devops-mastery-guide/" target="_blank" rel="noopener noreferrer"><picture><source srcset="assets/img/hero-bg2.webp" type="image/webp"><img src="assets/img/hero-bg2.jpg" alt="DevOps Mastery Guide learning site" class="img-fluid" loading="lazy"></picture></a>
+                <a href="https://deepakv30.github.io/devops-mastery-guide/" target="_blank" rel="noopener noreferrer"><picture><source srcset="assets/img/project-mastery-guide.webp" type="image/webp"><img src="assets/img/project-mastery-guide.jpg" alt="DevOps Mastery Guide homepage with learning paths from Linux to shipping an app" class="img-fluid" loading="lazy"></picture></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -544,12 +544,23 @@
                   </div>
                 </div>
                 <h3 class="card-title"><a href="https://deepakv30.github.io/devops-mastery-guide/" target="_blank" rel="noopener noreferrer">DevOps Mastery Guide</a></h3>
-                <p class="card-description">
-                  Hands-on path from Linux to Docker, Kubernetes, Terraform, GitHub Actions, Prometheus, and Grafana. Mental models, 15-minute first-success labs, and two capstones:
-                  <a href="https://deepakv30.github.io/devops-mastery-guide/projects/full-cicd-pipeline/" target="_blank" rel="noopener noreferrer">Full CI/CD pipeline</a>
-                  and
-                  <a href="https://deepakv30.github.io/devops-mastery-guide/projects/terraform-ansible-gitlab-vault/" target="_blank" rel="noopener noreferrer">Terraform + Ansible + Vault</a>.
-                </p>
+                <dl class="case-study">
+                  <div>
+                    <dt>Problem</dt>
+                    <dd>Scattered tutorials skip the path from a Linux shell to a running, observed app.</dd>
+                  </div>
+                  <div>
+                    <dt>Approach</dt>
+                    <dd>Mental models and 15-minute labs across Linux, Docker, Kubernetes, Terraform, GitHub Actions, Prometheus, and Grafana, plus two capstones:
+                    <a href="https://deepakv30.github.io/devops-mastery-guide/projects/full-cicd-pipeline/" target="_blank" rel="noopener noreferrer">Full CI/CD pipeline</a>
+                    and
+                    <a href="https://deepakv30.github.io/devops-mastery-guide/projects/terraform-ansible-gitlab-vault/" target="_blank" rel="noopener noreferrer">Terraform + Ansible + Vault</a>.</dd>
+                  </div>
+                  <div>
+                    <dt>Result</dt>
+                    <dd>Live guide with labs and both capstones shipped.</dd>
+                  </div>
+                </dl>
                 <div class="tech-stack mt-2 mb-1">
                   <span class="badge bg-dark me-1">Linux</span>
                   <span class="badge bg-primary me-1">Docker</span>
@@ -588,9 +599,20 @@
                   </div>
                 </div>
                 <h3 class="card-title"><a href="https://apna-hisab.ai.studio/" target="_blank" rel="noopener noreferrer">Apna Hisab</a></h3>
-                <p class="card-description">
-                  Split trip, dinner, and flatmate expenses across groups. Tracks balances and settles up with UPI (GPay, PhonePe, Paytm, BHIM) without awkward calculations.
-                </p>
+                <dl class="case-study">
+                  <div>
+                    <dt>Problem</dt>
+                    <dd>Splitting trip, dinner, and flatmate bills by hand is slow and easy to get wrong.</dd>
+                  </div>
+                  <div>
+                    <dt>Approach</dt>
+                    <dd>React + Firebase PWA that tracks group balances and settles via UPI (GPay, PhonePe, Paytm, BHIM).</dd>
+                  </div>
+                  <div>
+                    <dt>Result</dt>
+                    <dd>The app is live for splitting and settling expenses.</dd>
+                  </div>
+                </dl>
                 <div class="tech-stack mt-2 mb-1">
                   <span class="badge bg-primary me-1">React</span>
                   <span class="badge bg-warning text-dark me-1">Firebase</span>
@@ -618,7 +640,7 @@
           <div class="col-md-4 mb-4">
             <div class="card card-project">
               <div class="card-img">
-                <picture><source srcset="assets/img/hero-bg2.webp" type="image/webp"><img src="assets/img/hero-bg2.jpg" alt="GitLab CI/CD and ArgoCD GitOps on EKS, private case study" class="img-fluid" loading="lazy"></picture>
+                <picture><source srcset="assets/img/project-gitops-eks.webp" type="image/webp"><img src="assets/img/project-gitops-eks.jpg" alt="Diagram of GitLab CI, Trivy scans, ArgoCD GitOps, and EKS" class="img-fluid" loading="lazy"></picture>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -627,10 +649,20 @@
                   </div>
                 </div>
                 <h3 class="card-title">GitLab CI/CD + ArgoCD GitOps on EKS</h3>
-                <p class="card-description">
-                  Enterprise-grade CI/CD platform for microservices. Automated builds, security scans, and GitOps deployments to Kubernetes (EKS) with full traceability.
-                  Public source is not available; this is professional work — request a walkthrough.
-                </p>
+                <dl class="case-study">
+                  <div>
+                    <dt>Problem</dt>
+                    <dd>Microservices needed a repeatable path from commit to Kubernetes without manual deploys.</dd>
+                  </div>
+                  <div>
+                    <dt>Approach</dt>
+                    <dd>GitLab CI builds and tests, Trivy scans, then ArgoCD GitOps with Helm onto EKS. Public source is not available — request a walkthrough.</dd>
+                  </div>
+                  <div>
+                    <dt>Result</dt>
+                    <dd>Cut CI/CD deployment time by 65% and reduced failed deploys by 80%; 15+ microservices with zero-downtime releases.</dd>
+                  </div>
+                </dl>
                 <div class="tech-stack mt-2 mb-1">
                   <span class="badge bg-dark me-1">GitLab CI</span>
                   <span class="badge bg-primary me-1">ArgoCD</span>
@@ -659,7 +691,7 @@
           <div class="col-md-4 mb-4">
             <div class="card card-project">
               <div class="card-img">
-                <a href="https://github.com/deepakv30" target="_blank" rel="noopener noreferrer"><picture><source srcset="assets/img/overlay-bg.webp" type="image/webp"><img src="assets/img/overlay-bg.jpg" alt="Terraform AWS EKS Infrastructure as Code" class="img-fluid" loading="lazy"></picture></a>
+                <a href="https://github.com/deepakv30" target="_blank" rel="noopener noreferrer"><picture><source srcset="assets/img/project-terraform-eks.webp" type="image/webp"><img src="assets/img/project-terraform-eks.jpg" alt="Diagram of Terraform modules provisioning VPC, IAM, EKS, and AWS account baselines" class="img-fluid" loading="lazy"></picture></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -668,9 +700,20 @@
                   </div>
                 </div>
                 <h3 class="card-title"><a href="https://github.com/deepakv30" target="_blank" rel="noopener noreferrer">Multi-Account AWS IaC with Terraform + EKS</a></h3>
-                <p class="card-description">
-                  Production-ready, repeatable infrastructure provisioning for EKS clusters, networking, IAM, monitoring and security baselines across AWS accounts using Terraform.
-                </p>
+                <dl class="case-study">
+                  <div>
+                    <dt>Problem</dt>
+                    <dd>Multi-account AWS was hard to reproduce when clusters, IAM, and networking were built by hand.</dd>
+                  </div>
+                  <div>
+                    <dt>Approach</dt>
+                    <dd>Terraform modules for VPC, IAM, EKS, Helm, and monitoring/security baselines across accounts.</dd>
+                  </div>
+                  <div>
+                    <dt>Result</dt>
+                    <dd>IaC modules for multi-account AWS infrastructure, adopted across multiple teams.</dd>
+                  </div>
+                </dl>
                 <div class="tech-stack mt-2 mb-1">
                   <span class="badge bg-info me-1">Terraform</span>
                   <span class="badge bg-primary me-1">AWS EKS</span>
@@ -698,7 +741,7 @@
           <div class="col-md-4 mb-4">
             <div class="card card-project">
               <div class="card-img">
-                <a href="https://github.com/deepakv30" target="_blank" rel="noopener noreferrer"><picture><source srcset="assets/img/hero-bg2.webp" type="image/webp"><img src="assets/img/hero-bg2.jpg" alt="Prometheus Grafana ELK DevSecOps Observability Stack" class="img-fluid" loading="lazy"></picture></a>
+                <a href="https://github.com/deepakv30" target="_blank" rel="noopener noreferrer"><picture><source srcset="assets/img/project-observability.webp" type="image/webp"><img src="assets/img/project-observability.jpg" alt="Diagram of Prometheus, Grafana, ELK, and Trivy observability stack" class="img-fluid" loading="lazy"></picture></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -707,9 +750,20 @@
                   </div>
                 </div>
                 <h3 class="card-title"><a href="https://github.com/deepakv30" target="_blank" rel="noopener noreferrer">DevSecOps Observability Stack (Prometheus, Grafana, ELK)</a></h3>
-                <p class="card-description">
-                  Centralized monitoring, alerting, logging and security dashboards. Integrated with GitLab pipelines for automated metric collection and vulnerability visibility.
-                </p>
+                <dl class="case-study">
+                  <div>
+                    <dt>Problem</dt>
+                    <dd>Metrics, logs, and vulnerability findings lived in separate tools, so incidents and scans were hard to see together.</dd>
+                  </div>
+                  <div>
+                    <dt>Approach</dt>
+                    <dd>Prometheus, Grafana, and ELK for operations visibility, with Trivy in GitLab pipelines.</dd>
+                  </div>
+                  <div>
+                    <dt>Result</dt>
+                    <dd>Centralized monitoring plus pipeline scanning; 200+ critical vulnerabilities remediated and a 95%+ remediation SLA.</dd>
+                  </div>
+                </dl>
                 <div class="tech-stack mt-2 mb-1">
                   <span class="badge bg-primary me-1">Prometheus</span>
                   <span class="badge bg-success me-1">Grafana</span>
@@ -736,9 +790,10 @@
         </div>
 
         <!-- Learning / Demo Projects -->
+        <div class="projects-learning">
         <div class="row mt-4">
           <div class="col-12">
-            <h5 class="text-center mb-3" style="color:#4e4e4e; font-weight:500; font-size:1.1rem;">Demo &amp; Learning Projects</h5>
+            <h5 class="text-center mb-3 projects-kicker projects-kicker-secondary">Demo &amp; Learning Projects</h5>
           </div>
         </div>
         <div class="row">
@@ -872,6 +927,7 @@
               </div>
             </div>
           </div>
+        </div>
         </div>
         <div class="text-center mt-4">
           <a href="https://github.com/deepakv30" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View All Projects on GitHub</a>

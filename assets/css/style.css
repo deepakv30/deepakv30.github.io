@@ -1845,6 +1845,57 @@ footer .credits a {
   font-size: 0.9rem;
   color: #6c757d;
 }
+
+.projects-kicker {
+  color: #1e1e1e;
+  font-weight: 600;
+}
+
+.projects-kicker-secondary {
+  color: #4e4e4e;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+body.dark-mode .projects-kicker {
+  color: #f2f2f2;
+}
+
+body.dark-mode .projects-kicker-secondary {
+  color: #c5c5c5;
+}
+
+.case-study {
+  margin: 0.65rem 0 0;
+}
+
+.case-study > div {
+  margin-bottom: 0.5rem;
+}
+
+.case-study dt {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #0078ff;
+  margin: 0 0 0.12rem;
+}
+
+.case-study dd {
+  margin: 0;
+  font-size: 0.88rem;
+  color: #4e4e4e;
+  line-height: 1.45;
+}
+
+body.dark-mode .case-study dd {
+  color: #cfcfcf;
+}
+
+.projects-learning .card-img {
+  height: 160px;
+}
 .projects-mf .card-footer {
   float: none;
   display: flex;
