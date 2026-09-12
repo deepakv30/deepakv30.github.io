@@ -71,10 +71,10 @@ function renderBlogs(blogsToRender) {
         </div>
         <div class="card-footer">
           <div class="post-author">
-            <a href="#">
+            <span class="author-byline">
               <img src="../assets/img/mypic-removebg-preview.webp" alt="" class="avatar rounded-circle">
               <span class="author">${blog.author}</span>
-            </a>
+            </span>
           </div>
           <div class="post-date">
             <span class="bi bi-clock"></span> ${blog.time}
