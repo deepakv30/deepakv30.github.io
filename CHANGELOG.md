@@ -5,6 +5,18 @@ All notable changes to the deepakv30.github.io portfolio site.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.12] - 2026-09-12
+
+### Added
+- Education: KNIT, Bachelor’s in Electronics, 2011–2015, A+ (#59).
+
+### Changed
+- Public title is DevOps / Platform Engineer. Hero, About, and resume summary follow the LinkedIn headline/About, including the approved 50% system-failure reduction. About links devops-mastery-guide (#56, #57).
+- Experience is one Dell role: Software Engineer 2 - DevOps, Jun 2019 – Present, Bengaluru. Removed the 2023 start and aggregated “Previous Roles 2021–2023” (#58, #57).
+- CKA removed from site and resume until confirmed held (#57).
+
+**Closes #56, #57, #58, #59**
+
 ## [2.11] - 2026-09-12
 
 ### Added
