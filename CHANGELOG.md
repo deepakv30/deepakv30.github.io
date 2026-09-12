@@ -5,6 +5,13 @@ All notable changes to the deepakv30.github.io portfolio site.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.10] - 2026-09-12
+
+### Changed / Fixed
+- Blog listing light-mode header uses dark nav text on a light bar (contrast ≥ 4.5:1). Dark mode keeps light nav text on a dark bar; hover/active remain visible (#49).
+
+**Closes #49**
+
 ## [2.9] - 2026-09-12
 
 ### Changed / Fixed
