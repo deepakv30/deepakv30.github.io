@@ -5,6 +5,13 @@ All notable changes to the deepakv30.github.io portfolio site.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.13] - 2026-09-12
+
+### Changed
+- Certifications and resume list only LinkedIn-verified credentials: RHCSA, Dell ISM v5.0, Dell PowerEdge v2.0, and Be A DevOps Pro, each with a personal verify URL. Removed AWS DevOps Pro, Terraform Associate, and GitLab CI/CD Associate. CKA stays off (#60, #57).
+
+**Closes #60**
+
 ## [2.12] - 2026-09-12
 
 ### Added

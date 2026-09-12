@@ -264,9 +264,10 @@ def build() -> None:
             Paragraph("Certifications", styles["h"]),
             _bullets(
                 [
-                    "AWS Certified DevOps Engineer – Professional · Amazon Web Services · 2024",
-                    "HashiCorp Certified: Terraform Associate · HashiCorp · 2024",
-                    "GitLab Certified Associate – CI/CD · GitLab · 2023",
+                    '<link href="https://rhtapps.redhat.com/verify?certId=240-144-576"><b>Red Hat Certified System Administrator (RHCSA)</b></link> · Red Hat · Aug 2024 – Aug 2027',
+                    '<link href="https://www.credly.com/badges/1e8632c5-4215-4f98-b767-4c8fbbe5ede3"><b>Associate - Information Storage and Management v5.0</b></link> · Dell Technologies · Dec 2023',
+                    '<link href="https://www.credly.com/badges/12a25f05-a244-4824-a695-18f07b0fe4b7"><b>Associate - PowerEdge v2.0</b></link> · Dell Technologies · Sep 2023',
+                    '<link href="https://pwskills.com/learn/certificate/44658404-29a8-4316-a8b7-a13690e47d07"><b>Be A DevOps Pro</b></link> · iNeuron.ai · Jul 2023',
                 ],
                 styles["bullet"],
             ),

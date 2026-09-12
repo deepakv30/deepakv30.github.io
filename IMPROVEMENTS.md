@@ -157,7 +157,7 @@ All Phase 1-3 + bugs from the 2026-06 site review (issues #15-18) are **complete
 3. **Real screenshots**: Replace placeholder project images with architecture diagrams/pipeline screenshots (Phase 2 note; still open as #44).
 4. **Custom domain / full headers**: See DEPLOYMENT_CHECKLIST.md (CNAME + Cloudflare recommended for headers).
 5. **Re-audit post deploy**: Run Lighthouse + axe after any future changes.
-6. **Personal cert badges**: Cert CTAs are labeled “About this cert” (issuer pages) until personal Credly/CNCF/HashiCorp URLs exist (#41).
+6. **Personal cert badges**: `#certifications` lists LinkedIn-verified credentials with personal verify URLs (Red Hat, Credly, PW Skills/iNeuron) (#60). CKA is not claimed.
 
 ### **Future Enhancements (from older + #17 recs)**
 1. **More Projects / Blog**: Continue adding DevSecOps case studies; more Medium cross-posts or dedicated posts.
