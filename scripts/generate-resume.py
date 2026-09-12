@@ -174,12 +174,12 @@ def build() -> None:
         bottomMargin=0.45 * inch,
         title="Deepak Vishwakarma — Resume",
         author="Deepak Vishwakarma",
-        subject="DevSecOps Engineer resume (facts from https://deepakv30.github.io/)",
+        subject="DevOps / Platform Engineer resume (facts from https://deepakv30.github.io/)",
     )
 
     story: list = [
         Paragraph("Deepak Vishwakarma", styles["name"]),
-        Paragraph("DevSecOps Engineer", styles["title"]),
+        Paragraph("DevOps / Platform Engineer", styles["title"]),
         Paragraph(
             "Bengaluru, Karnataka, India · "
             '<link href="mailto:deepakv.knit@gmail.com">deepakv.knit@gmail.com</link>',
@@ -195,32 +195,22 @@ def build() -> None:
         HRFlowable(width="100%", thickness=1.5, color=BLUE, spaceBefore=6, spaceAfter=2),
         Paragraph("Summary", styles["h"]),
         Paragraph(
-            "DevSecOps Engineer specializing in GitLab administration, DevOps automation, "
-            "CI/CD, Kubernetes, Docker, AWS, and Linux system administration. Focused on "
-            "infrastructure management, CI/CD optimization, and automation for efficient, "
-            "scalable workflows. Expanding into MLOps to connect AI workflows with DevOps "
-            "automation. Based in Bengaluru; currently at Dell Technologies.",
+            "DevOps / Platform Engineer at Dell Technologies. I help teams ship faster by "
+            "turning fragile infra into reliable delivery paths — CI/CD, automation, and "
+            "platforms developers actually want to use. Reduced system failures 50% through "
+            "better platform practices. GitLab, CI/CD, Kubernetes. Based in Bengaluru.",
             styles["body"],
         ),
         Paragraph("Experience", styles["h"]),
-        Paragraph("DevSecOps Engineer", styles["job"]),
-        Paragraph("Dell Technologies · 2023 – Present", styles["meta"]),
+        Paragraph("DevOps / Platform Engineer", styles["job"]),
+        Paragraph("Software Engineer 2 - DevOps · Dell Technologies · Bengaluru · Jun 2019 – Present", styles["meta"]),
         _bullets(
             [
                 "Administered GitLab for 200+ engineers; optimized 50+ CI/CD pipelines reducing deployment time by 65%.",
                 "Implemented ArgoCD GitOps + Kubernetes (EKS) for 15+ microservices with zero-downtime releases.",
                 "Embedded DevSecOps: Trivy, SonarQube &amp; OWASP scanning in pipelines; remediated 200+ critical vulnerabilities.",
                 "Built Terraform IaC modules for multi-account AWS infrastructure &amp; monitoring (Prometheus/Grafana/ELK).",
-            ],
-            styles["bullet"],
-        ),
-        Paragraph("Linux System Administrator", styles["job"]),
-        Paragraph("Previous Roles · 2021 – 2023", styles["meta"]),
-        _bullets(
-            [
-                "Managed 100+ RHEL/Ubuntu servers; automated patching &amp; reduced MTTR by 40% via shell/Python scripting.",
-                "Implemented security hardening (CIS benchmarks) &amp; compliance monitoring across production fleets.",
-                "Dockerized legacy apps and supported initial Kubernetes adoption.",
+                "Reduced system failures 50% through better platform practices.",
             ],
             styles["bullet"],
         ),
@@ -228,7 +218,7 @@ def build() -> None:
         _bullets(
             [
                 "Internal award for DevOps automation excellence &amp; infrastructure optimization (2024).",
-                "Cut CI/CD deployment time by 65% and reduced failed deploys by 80% via GitLab + ArgoCD GitOps.",
+                "Reduced system failures 50%; cut CI/CD deployment time by 65% and reduced failed deploys by 80% via GitLab + ArgoCD GitOps.",
                 "Embedded automated scanning (Trivy/Sonar) achieving 95%+ vulnerability remediation SLA.",
                 "Active technical blogger (Medium) plus internal workshops on DevOps, Linux &amp; Kubernetes best practices.",
                 "Architected GitOps platform and Terraform modules adopted across multiple teams.",
@@ -268,11 +258,13 @@ def build() -> None:
 
     story.extend(
         [
+            Paragraph("Education", styles["h"]),
+            Paragraph("Bachelor’s, Electronics", styles["job"]),
+            Paragraph("Kamla Nehru Institute of Technology (KNIT) · 2011 – 2015 · Grade: A+", styles["meta"]),
             Paragraph("Certifications", styles["h"]),
             _bullets(
                 [
                     "AWS Certified DevOps Engineer – Professional · Amazon Web Services · 2024",
-                    "Certified Kubernetes Administrator (CKA) · Cloud Native Computing Foundation · 2023",
                     "HashiCorp Certified: Terraform Associate · HashiCorp · 2024",
                     "GitLab Certified Associate – CI/CD · GitLab · 2023",
                 ],
