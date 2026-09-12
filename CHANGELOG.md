@@ -5,6 +5,13 @@ All notable changes to the deepakv30.github.io portfolio site.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.8] - 2026-09-12
+
+### Changed / Fixed
+- Mobile home no longer scrolls sideways at 375/390px. Oversized uppercase section titles (`CERTIFICATIONS`, `ACHIEVEMENTS`) and the hero title now scale down and wrap; hero content is capped to the viewport (#47).
+
+**Closes #47**
+
 ## [2.7] - 2026-09-12
 
 ### Added
