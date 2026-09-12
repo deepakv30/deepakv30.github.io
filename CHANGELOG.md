@@ -5,6 +5,13 @@ All notable changes to the deepakv30.github.io portfolio site.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.9] - 2026-09-12
+
+### Changed / Fixed
+- Removed dead `href="#"` author controls, unused dropdown markup, and the BootstrapMade “purchase the pro version” footer comment. Contact message field now has `id="message"` matching its label. Back-to-top points at `#hero` / `#main` (#45).
+
+**Closes #45**
+
 ## [2.8] - 2026-09-12
 
 ### Changed / Fixed
