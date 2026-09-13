@@ -5,6 +5,13 @@ All notable changes to the deepakv30.github.io portfolio site.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.14] - 2026-09-13
+
+### Changed
+- Home Projects shows three featured cards on load (DevOps Mastery Guide, Apna Hisab, GitLab CI/CD + ArgoCD GitOps on EKS). Remaining Featured and Demo & Learning cards sit behind an accessible **View more** control (`aria-expanded`, keyboard-native button). GitHub link stays below (#64).
+
+**Closes #64**
+
 ## [2.13] - 2026-09-12
 
 ### Changed
