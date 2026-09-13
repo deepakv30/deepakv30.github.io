@@ -1910,6 +1910,19 @@ body.dark-mode .case-study dd {
   border-bottom-right-radius: 10px;
 }
 
+.projects-view-more {
+  min-width: 10rem;
+}
+
+.projects-view-more:focus-visible {
+  outline: 2px solid #0078ff;
+  outline-offset: 3px;
+}
+
+.projects-more {
+  margin-top: 0.25rem;
+}
+
 /* Phase 2: Tech stack badges & Certifications polish */
 .tech-stack .badge {
   font-size: 0.65rem;

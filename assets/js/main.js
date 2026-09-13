@@ -178,4 +178,18 @@
   // (no .portfolio-lightbox, no .testimonials-slider, no .portfolio-details-slider, no counters).
   // This significantly reduces initial payload and unused JS execution.
 
+  /**
+   * Projects "View more" disclosure
+   */
+  const projectsMore = select('#projects-more')
+  const projectsToggle = select('#projects-view-more')
+  if (projectsMore && projectsToggle) {
+    projectsToggle.addEventListener('click', () => {
+      const next = projectsToggle.getAttribute('aria-expanded') !== 'true'
+      projectsToggle.setAttribute('aria-expanded', String(next))
+      projectsToggle.textContent = next ? 'View less' : 'View more'
+      projectsMore.hidden = !next
+    })
+  }
+
 })()
