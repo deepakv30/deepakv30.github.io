@@ -2,9 +2,9 @@ name: CI - Performance, Build & Polish Checks (Phase 3)
 
 on:
   push:
-    branches: [ master, main, 'feat/*' ]
+    branches: [ main, 'feat/*' ]
   pull_request:
-    branches: [ master, main ]
+    branches: [ main ]
 
 jobs:
   build-and-audit:
