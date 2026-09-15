@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-15
+
+### Changed
+- Removed mirrored `js-calculator/` and `Todo-Application/` demo folders; portfolio Demo links now point to first-party GitHub Pages (`JS-Calculator`, `Todo-Application`).
+- Updated `sitemap.xml` locs accordingly. Project screenshots under `assets/img/` kept.
+
+
 All notable changes to the deepakv30.github.io portfolio site.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
