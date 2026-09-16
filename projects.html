@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Projects | Deepak Vishwakarma</title>
+  <meta content="All portfolio projects by Deepak Vishwakarma: DevOps Mastery Guide, Apna Hisab, GitOps on EKS, Terraform, observability, and demo apps." name="description">
+  <meta content="DevOps, GitLab, Kubernetes, Terraform, projects, CI/CD, GitOps" name="keywords">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://deepakv30.github.io/projects.html">
+  <meta property="og:title" content="Projects | Deepak Vishwakarma">
+  <meta property="og:description" content="Searchable index of DevOps, platform, and learning projects.">
+  <meta property="og:image" content="https://deepakv30.github.io/assets/img/mypic-removebg-preview.webp">
+  <link rel="canonical" href="https://deepakv30.github.io/projects.html">
+  <link rel="icon" type="image/webp" href="assets/img/logo.webp">
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body class="page-inner">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center" aria-label="Deepak Vishwakarma home">
+        <picture>
+          <source srcset="assets/img/logo.webp" type="image/webp">
+          <img src="assets/img/logo.png" alt="" width="40" height="40" class="img-fluid" onerror="this.style.display='none'">
+        </picture>
+        <span>Welcome To DevOps World</span>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto active" href="projects.html">Projects</a></li>
+          <li><a class="nav-link scrollto" href="blog/index.html">Blog</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" style="margin-top: 100px;">
+    <section class="projects-mf sect-pt4 route" aria-labelledby="projects-page-title">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h1 class="title-a" id="projects-page-title">Projects</h1>
+              <p class="subtitle-a">Featured DevSecOps work and demo/learning projects. Search by name, tech, or description.</p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-search">
+          <label for="projects-search" class="form-label">Search projects</label>
+          <div class="input-group">
+            <input type="search" id="projects-search" class="form-control" placeholder="Filter by name, tech, or description" autocomplete="off" aria-describedby="projects-count" aria-controls="projects-grid">
+            <button class="btn btn-outline-secondary" type="button" id="projects-search-clear" aria-label="Clear search">
+              <i class="bi bi-x-lg" aria-hidden="true"></i>
+            </button>
+          </div>
+          <p id="projects-count" class="text-muted small mt-2 mb-0" role="status" aria-live="polite"></p>
+        </div>
+
+        <p id="projects-empty" class="projects-empty" hidden role="status">No projects match your search. Try a different name, tech, or keyword.</p>
+
+        <div class="row" id="projects-grid">
+          <div class="col-md-4 mb-4 d-flex" data-project-card data-search="devops mastery guide learning path linux docker kubernetes terraform github actions prometheus grafana ci/cd labs capstone">
+            <div class="card card-project h-100">
+              <div class="card-img">
+                <a href="https://deepakv30.github.io/devops-mastery-guide/" target="_blank" rel="noopener noreferrer"><picture><source srcset="assets/img/project-mastery-guide.webp" type="image/webp"><img src="assets/img/project-mastery-guide.jpg" alt="DevOps Mastery Guide homepage with learning paths from Linux to shipping an app" class="img-fluid" loading="lazy"></picture></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Learning Path</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="https://deepakv30.github.io/devops-mastery-guide/" target="_blank" rel="noopener noreferrer">DevOps Mastery Guide</a></h3>
+                <dl class="case-study">
+                  <div>
+                    <dt>Problem</dt>
+                    <dd>Scattered tutorials skip the path from a Linux shell to a running, observed app.</dd>
+                  </div>
+                  <div>
+                    <dt>Approach</dt>
+                    <dd>Mental models and 15-minute labs (Linux, Docker, Kubernetes, Terraform, GitHub Actions, Prometheus, Grafana) plus two capstones:
+                    <a href="https://deepakv30.github.io/devops-mastery-guide/projects/full-cicd-pipeline/" target="_blank" rel="noopener noreferrer">Full CI/CD pipeline</a>
+                    and
+                    <a href="https://deepakv30.github.io/devops-mastery-guide/projects/terraform-ansible-gitlab-vault/" target="_blank" rel="noopener noreferrer">Terraform + Ansible + Vault</a>.</dd>
+                  </div>
+                  <div>
+                    <dt>Result</dt>
+                    <dd>Live guide with labs and both capstones shipped.</dd>
+                  </div>
+                </dl>
+                <div class="tech-stack mt-2 mb-1">
+                  <span class="badge bg-dark me-1">Linux</span>
+                  <span class="badge bg-primary me-1">Docker</span>
+                  <span class="badge bg-success me-1">Kubernetes</span>
+                  <span class="badge bg-info me-1">Terraform</span>
+                  <span class="badge bg-secondary me-1">GitHub Actions</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <span class="author-byline">
+                    <picture>
+                      <source srcset="assets/img/mypic-removebg-preview.webp" type="image/webp">
+                      <img src="assets/img/mypic-removebg-preview.png" alt="" class="avatar rounded-circle" loading="lazy">
+                    </picture>
+                    <span class="author">Deepak Vishwakarma</span>
+                  </span>
+                </div>
+                <div class="project-cta">
+                  <a href="https://deepakv30.github.io/devops-mastery-guide/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success">Live</a>
+                  <a href="https://github.com/deepakv30/devops-mastery-guide" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">Repo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 d-flex" data-project-card data-search="apna hisab web app react firebase pwa upi bills expenses gpay phonepe paytm bhim">
+            <div class="card card-project h-100">
+              <div class="card-img">
+                <a href="https://apna-hisab.ai.studio/" target="_blank" rel="noopener noreferrer"><picture><source srcset="assets/img/apna-hisab.webp" type="image/webp"><img src="assets/img/apna-hisab.jpg" alt="Apna Hisab bill splitting app" class="img-fluid" loading="lazy"></picture></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Web App</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="https://apna-hisab.ai.studio/" target="_blank" rel="noopener noreferrer">Apna Hisab</a></h3>
+                <dl class="case-study">
+                  <div>
+                    <dt>Problem</dt>
+                    <dd>Splitting trip, dinner, and flatmate bills by hand is slow and easy to get wrong.</dd>
+                  </div>
+                  <div>
+                    <dt>Approach</dt>
+                    <dd>React + Firebase PWA that tracks group balances and settles via UPI (GPay, PhonePe, Paytm, BHIM).</dd>
+                  </div>
+                  <div>
+                    <dt>Result</dt>
+                    <dd>The app is live for splitting and settling expenses.</dd>
+                  </div>
+                </dl>
+                <div class="tech-stack mt-2 mb-1">
+                  <span class="badge bg-primary me-1">React</span>
+                  <span class="badge bg-warning text-dark me-1">Firebase</span>
+                  <span class="badge bg-success me-1">PWA</span>
+                  <span class="badge bg-dark me-1">UPI</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <span class="author-byline">
+                    <picture>
+                      <source srcset="assets/img/mypic-removebg-preview.webp" type="image/webp">
+                      <img src="assets/img/mypic-removebg-preview.png" alt="" class="avatar rounded-circle" loading="lazy">
+                    </picture>
+                    <span class="author">Deepak Vishwakarma</span>
+                  </span>
+                </div>
+                <div class="project-cta">
+                  <a href="https://apna-hisab.ai.studio/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success">Live</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 d-flex" data-project-card data-search="gitlab ci/cd argocd gitops eks kubernetes helm trivy microservices private walkthrough">
+            <div class="card card-project h-100">
+              <div class="card-img">
+                <picture><source srcset="assets/img/project-gitops-eks.webp" type="image/webp"><img src="assets/img/project-gitops-eks.jpg" alt="Diagram of GitLab CI, Trivy scans, ArgoCD GitOps, and EKS" class="img-fluid" loading="lazy"></picture>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">GitOps · Private</h6>
+                  </div>
+                </div>
+                <h3 class="card-title">GitLab CI/CD + ArgoCD GitOps on EKS</h3>
+                <dl class="case-study">
+                  <div>
+                    <dt>Problem</dt>
+                    <dd>Microservices needed a repeatable path from commit to Kubernetes without manual deploys.</dd>
+                  </div>
+                  <div>
+                    <dt>Approach</dt>
+                    <dd>GitLab CI builds and tests, Trivy scans, then ArgoCD GitOps with Helm onto EKS.</dd>
+                  </div>
+                  <div>
+                    <dt>Result</dt>
+                    <dd>Cut CI/CD deployment time by 65% and reduced failed deploys by 80%; 15+ microservices with zero-downtime releases.</dd>
+                  </div>
+                </dl>
+                <div class="tech-stack mt-2 mb-1">
+                  <span class="badge bg-dark me-1">GitLab CI</span>
+                  <span class="badge bg-primary me-1">ArgoCD</span>
+                  <span class="badge bg-success me-1">Kubernetes</span>
+                  <span class="badge bg-warning text-dark me-1">Helm</span>
+                  <span class="badge bg-danger me-1">Trivy</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <span class="author-byline">
+                    <picture>
+                      <source srcset="assets/img/mypic-removebg-preview.webp" type="image/webp">
+                      <img src="assets/img/mypic-removebg-preview.png" alt="" class="avatar rounded-circle" loading="lazy">
+                    </picture>
+                    <span class="author">Deepak Vishwakarma</span>
+                  </span>
+                </div>
+                <div class="project-cta">
+                  <a href="https://www.linkedin.com/in/deepakv30/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary" title="Request a walkthrough via LinkedIn">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 d-flex" data-project-card data-search="multi-account aws iac terraform eks vpc iam helm infrastructure as code">
+            <div class="card card-project h-100">
+              <div class="card-img">
+                <a href="https://github.com/deepakv30" target="_blank" rel="noopener noreferrer"><picture><source srcset="assets/img/project-terraform-eks.webp" type="image/webp"><img src="assets/img/project-terraform-eks.jpg" alt="Diagram of Terraform modules provisioning VPC, IAM, EKS, and AWS account baselines" class="img-fluid" loading="lazy"></picture></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">IaC</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="https://github.com/deepakv30" target="_blank" rel="noopener noreferrer">Multi-Account AWS IaC with Terraform + EKS</a></h3>
+                <dl class="case-study">
+                  <div>
+                    <dt>Problem</dt>
+                    <dd>Multi-account AWS was hard to reproduce when clusters, IAM, and networking were built by hand.</dd>
+                  </div>
+                  <div>
+                    <dt>Approach</dt>
+                    <dd>Terraform modules for VPC, IAM, EKS, Helm, and monitoring/security baselines across accounts.</dd>
+                  </div>
+                  <div>
+                    <dt>Result</dt>
+                    <dd>IaC modules for multi-account AWS infrastructure, adopted across multiple teams.</dd>
+                  </div>
+                </dl>
+                <div class="tech-stack mt-2 mb-1">
+                  <span class="badge bg-info me-1">Terraform</span>
+                  <span class="badge bg-primary me-1">AWS EKS</span>
+                  <span class="badge bg-secondary me-1">VPC / IAM</span>
+                  <span class="badge bg-dark me-1">Helm</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <span class="author-byline">
+                    <picture>
+                      <source srcset="assets/img/mypic-removebg-preview.webp" type="image/webp">
+                      <img src="assets/img/mypic-removebg-preview.png" alt="" class="avatar rounded-circle" loading="lazy">
+                    </picture>
+                    <span class="author">Deepak Vishwakarma</span>
+                  </span>
+                </div>
+                <div class="project-cta">
+                  <a href="https://github.com/deepakv30" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 d-flex" data-project-card data-search="devsecops observability stack prometheus grafana elk trivy monitoring logs security scanning">
+            <div class="card card-project h-100">
+              <div class="card-img">
+                <a href="https://github.com/deepakv30" target="_blank" rel="noopener noreferrer"><picture><source srcset="assets/img/project-observability.webp" type="image/webp"><img src="assets/img/project-observability.jpg" alt="Diagram of Prometheus, Grafana, ELK, and Trivy observability stack" class="img-fluid" loading="lazy"></picture></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Observability</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="https://github.com/deepakv30" target="_blank" rel="noopener noreferrer">DevSecOps Observability Stack (Prometheus, Grafana, ELK)</a></h3>
+                <dl class="case-study">
+                  <div>
+                    <dt>Problem</dt>
+                    <dd>Metrics, logs, and vulnerability findings lived in separate tools, so incidents and scans were hard to see together.</dd>
+                  </div>
+                  <div>
+                    <dt>Approach</dt>
+                    <dd>Prometheus, Grafana, and ELK for operations visibility, with Trivy in GitLab pipelines.</dd>
+                  </div>
+                  <div>
+                    <dt>Result</dt>
+                    <dd>Centralized monitoring plus pipeline scanning; 200+ critical vulnerabilities remediated and a 95%+ remediation SLA.</dd>
+                  </div>
+                </dl>
+                <div class="tech-stack mt-2 mb-1">
+                  <span class="badge bg-primary me-1">Prometheus</span>
+                  <span class="badge bg-success me-1">Grafana</span>
+                  <span class="badge bg-warning text-dark me-1">ELK</span>
+                  <span class="badge bg-danger me-1">Trivy</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <span class="author-byline">
+                    <picture>
+                      <source srcset="assets/img/mypic-removebg-preview.webp" type="image/webp">
+                      <img src="assets/img/mypic-removebg-preview.png" alt="" class="avatar rounded-circle" loading="lazy">
+                    </picture>
+                    <span class="author">Deepak Vishwakarma</span>
+                  </span>
+                </div>
+                <div class="project-cta">
+                  <a href="https://github.com/deepakv30" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 d-flex" data-project-card data-search="js calculator javascript demo learning dom event-driven responsive ui">
+            <div class="card card-project h-100">
+              <div class="card-img">
+                <a href="https://deepakv30.github.io/JS-Calculator/" target="_blank" rel="noopener noreferrer"><picture><source srcset="assets/img/hero-bg2.webp" type="image/webp"><img src="assets/img/hero-bg2.jpg" alt="JavaScript Calculator Project Screenshot" class="img-fluid" loading="lazy"></picture></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">JavaScript</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="https://deepakv30.github.io/JS-Calculator/" target="_blank" rel="noopener noreferrer">JS Calculator</a></h3>
+                <p class="card-description">
+                  Interactive calculator demonstrating core JavaScript, DOM manipulation and responsive UI. Great for learning event-driven development.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <span class="author-byline">
+                    <picture>
+                      <source srcset="assets/img/mypic-removebg-preview.webp" type="image/webp">
+                      <img src="assets/img/mypic-removebg-preview.png" alt="" class="avatar rounded-circle" loading="lazy">
+                    </picture>
+                    <span class="author">Deepak Vishwakarma</span>
+                  </span>
+                </div>
+                <div class="project-cta">
+                  <a href="https://deepakv30.github.io/JS-Calculator/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success">Demo</a>
+                  <a href="https://github.com/deepakv30/JS-Calculator" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">Repo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 d-flex" data-project-card data-search="todo application javascript demo learning crud localstorage persistence ux">
+            <div class="card card-project h-100">
+              <div class="card-img">
+                <a href="https://deepakv30.github.io/Todo-Application/" target="_blank" rel="noopener noreferrer"><picture><source srcset="assets/img/Todo-Application.webp" type="image/webp"><img src="assets/img/Todo-Application.png" alt="Todo Application Project Screenshot" class="img-fluid" loading="lazy"></picture></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">JavaScript</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="https://deepakv30.github.io/Todo-Application/" target="_blank" rel="noopener noreferrer">Todo Application</a></h3>
+                <p class="card-description">
+                  CRUD todo manager with local persistence. Demonstrates clean JS architecture, DOM updates and UX patterns for small web apps.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <span class="author-byline">
+                    <picture>
+                      <source srcset="assets/img/mypic-removebg-preview.webp" type="image/webp">
+                      <img src="assets/img/mypic-removebg-preview.png" alt="" class="avatar rounded-circle" loading="lazy">
+                    </picture>
+                    <span class="author">Deepak Vishwakarma</span>
+                  </span>
+                </div>
+                <div class="project-cta">
+                  <a href="https://deepakv30.github.io/Todo-Application/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-success">Demo</a>
+                  <a href="https://github.com/deepakv30/Todo-Application" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">Repo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 d-flex" data-project-card data-search="alien invasion game python pygame demo learning sprites collision keyboard">
+            <div class="card card-project h-100">
+              <div class="card-img">
+                <a href="https://github.com/deepakv30/AlienInvasion" target="_blank" rel="noopener noreferrer"><picture><source srcset="assets/img/overlay-bg.webp" type="image/webp"><img src="assets/img/overlay-bg.jpg" alt="Alien Invasion Game Project Screenshot" class="img-fluid" loading="lazy"></picture></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Python / Pygame</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="https://github.com/deepakv30/AlienInvasion" target="_blank" rel="noopener noreferrer">Alien Invasion Game</a></h3>
+                <p class="card-description">
+                  Classic space shooter built with Python + Pygame. Showcases game loops, sprite management, collision detection and keyboard controls.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <span class="author-byline">
+                    <picture>
+                      <source srcset="assets/img/mypic-removebg-preview.webp" type="image/webp">
+                      <img src="assets/img/mypic-removebg-preview.png" alt="" class="avatar rounded-circle" loading="lazy">
+                    </picture>
+                    <span class="author">Deepak Vishwakarma</span>
+                  </span>
+                </div>
+                <div class="project-cta">
+                  <a href="https://github.com/deepakv30/AlienInvasion" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">Repo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4 d-flex" data-project-card data-search="hangman cli game python ascii input validation ci demo learning">
+            <div class="card card-project h-100">
+              <div class="card-img">
+                <a href="https://github.com/deepakv30/Hangman" target="_blank" rel="noopener noreferrer"><picture><source srcset="assets/img/overlay-bg.webp" type="image/webp"><img src="assets/img/overlay-bg.jpg" alt="Hangman CLI Game Project" class="img-fluid" loading="lazy"></picture></a>
+              </div>
+              <div class="card-body">
+                <div class="card-category-box">
+                  <div class="card-category">
+                    <h6 class="category">Python / CLI</h6>
+                  </div>
+                </div>
+                <h3 class="card-title"><a href="https://github.com/deepakv30/Hangman" target="_blank" rel="noopener noreferrer">Hangman CLI Game</a></h3>
+                <p class="card-description">
+                  Tested, CI-enabled Python Hangman with ASCII art, input validation, and a clean command-line UX. No external dependencies.
+                </p>
+              </div>
+              <div class="card-footer">
+                <div class="post-author">
+                  <span class="author-byline">
+                    <picture>
+                      <source srcset="assets/img/mypic-removebg-preview.webp" type="image/webp">
+                      <img src="assets/img/mypic-removebg-preview.png" alt="" class="avatar rounded-circle" loading="lazy">
+                    </picture>
+                    <span class="author">Deepak Vishwakarma</span>
+                  </span>
+                </div>
+                <div class="project-cta">
+                  <a href="https://github.com/deepakv30/Hangman" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline-primary">Repo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-2 mb-4">
+          <a href="https://github.com/deepakv30" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View All Projects on GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Deepak Vishwakarma</strong>. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="preloader"></div>
+  <a href="#main" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Back to top"><i class="bi bi-arrow-up-short" aria-hidden="true"></i></a>
+  <div class="theme-toggle" id="theme-toggle" role="button" aria-label="Toggle dark mode" title="Toggle Dark Mode" tabindex="0">
+    <i class="bi bi-moon-fill" id="theme-icon" aria-hidden="true"></i>
+  </div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/projects-search.js"></script>
+  <script>
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    if (currentTheme === 'dark') {
+      document.body.classList.add('dark-mode');
+      themeIcon.classList.remove('bi-moon-fill');
+      themeIcon.classList.add('bi-sun-fill');
+    }
+    themeToggle.addEventListener('click', function () {
+      document.body.classList.toggle('dark-mode');
+      if (document.body.classList.contains('dark-mode')) {
+        themeIcon.classList.remove('bi-moon-fill');
+        themeIcon.classList.add('bi-sun-fill');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        themeIcon.classList.remove('bi-sun-fill');
+        themeIcon.classList.add('bi-moon-fill');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
+</body>
+</html>
