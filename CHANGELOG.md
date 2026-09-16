@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-09-16
+
+### Added
+- `projects.html` lists every portfolio project with an accessible search filter and empty state.
+
+### Changed
+- Homepage Featured projects: three equal-height cards with a shared skeleton and consistent Live / Repo / Details CTAs. **View more** navigates to `projects.html` instead of expanding `#projects-more` (#71).
+- `sitemap.xml` includes `/projects.html`. Demo links still point at standalone Pages (`JS-Calculator`, `Todo-Application`).
+
+**Closes #71**
+
 ## 2026-09-15
 
 ### Changed
@@ -11,6 +22,16 @@ All notable changes to the deepakv30.github.io portfolio site.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [2.15] - 2026-09-16
+
+### Added
+- Searchable projects index at `projects.html` (featured DevSecOps plus demo/learning work).
+
+### Changed
+- Home `#projects` shows three equal cards; **View more** is a page link, not an in-place disclosure (#71).
+
+**Closes #71**
 
 ## [2.14] - 2026-09-13
 
