@@ -275,7 +275,7 @@ def build() -> None:
             _bullets(
                 [
                     '<link href="https://deepakv30.github.io/devops-mastery-guide/"><b>DevOps Mastery Guide</b></link> — hands-on path from Linux to Docker, Kubernetes, Terraform, GitHub Actions, Prometheus, and Grafana.',
-                    '<link href="https://apna-hisab.ai.studio/"><b>Apna Hisab</b></link> — split trip, dinner, and flatmate expenses; settle up with UPI.',
+                    '<link href="https://apna-hisab-xblj7muxgq-el.a.run.app/"><b>Apna Hisab</b></link> — split expenses; know who owes whom, and settle via UPI.',
                     "Additional demos: JS Calculator, Todo Application, Alien Invasion, Hangman — see github.com/deepakv30.",
                 ],
                 styles["bullet"],
